@@ -29,6 +29,8 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     style: 'expanded',
+                    lineNumbers: true,
+                    loadPath: require('node-neat').includePaths
                 },
                 files: {
                     'style.css': 'sass/style.scss',

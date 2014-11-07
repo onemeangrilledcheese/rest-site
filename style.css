@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Restaurant Theme
 Theme URI: http://underscores.me/
@@ -43,10 +44,40 @@ and Blueprint http://www.blueprintcss.org/
 	12.1 Captions
 	12.2 Galleries
 --------------------------------------------------------------*/
+/* line 2, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 11, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_visual-grid.scss */
+body:before {
+  content: '';
+  display: inline-block;
+  background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
+  background-image: -webkit-linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
+  background-image: -moz-linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
+  background-image: -ms-linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
+  background-image: -o-linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
+  background-image: linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 80.5em;
+  opacity: 0.4;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/
+/* line 1, sass/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -66,10 +97,12 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
+/* line 19, sass/_reset.scss */
 html {
   height: 100%;
 }
 
+/* line 22, sass/_reset.scss */
 html {
   font-size: 62.5%;
   /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
@@ -81,6 +114,7 @@ html {
   /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 
+/* line 28, sass/_reset.scss */
 *,
 *:before,
 *:after {
@@ -90,11 +124,13 @@ html {
   box-sizing: border-box;
 }
 
+/* line 33, sass/_reset.scss */
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
 }
 
+/* line 36, sass/_reset.scss */
 article,
 aside,
 details,
@@ -108,39 +144,47 @@ section {
   display: block;
 }
 
+/* line 48, sass/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
+/* line 51, sass/_reset.scss */
 table {
   /* tables still need 'cellspacing="0"' in the markup */
   border-collapse: separate;
   border-spacing: 0;
 }
 
+/* line 55, sass/_reset.scss */
 caption, th, td {
   font-weight: normal;
   text-align: left;
 }
 
+/* line 59, sass/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
 }
 
+/* line 63, sass/_reset.scss */
 blockquote, q {
   quotes: "" "";
 }
 
+/* line 66, sass/_reset.scss */
 a:focus {
   outline: thin dotted;
 }
 
+/* line 69, sass/_reset.scss */
 a:hover,
 a:active {
   outline: 0;
 }
 
+/* line 73, sass/_reset.scss */
 a img {
   border: 0;
 }
@@ -148,6 +192,7 @@ a img {
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
+/* line 1, sass/typography/_typography.scss */
 body,
 button,
 input,
@@ -160,30 +205,37 @@ textarea {
   line-height: 1.5;
 }
 
+/* line 1, sass/typography/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
+/* line 1, sass/typography/_copy.scss */
 p {
   margin-bottom: 1.5em;
 }
 
+/* line 5, sass/typography/_copy.scss */
 b, strong {
   font-weight: bold;
 }
 
+/* line 9, sass/typography/_copy.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
 
+/* line 13, sass/typography/_copy.scss */
 blockquote {
   margin: 0 1.5em;
 }
 
+/* line 17, sass/typography/_copy.scss */
 address {
   margin: 0 0 1.5em;
 }
 
+/* line 21, sass/typography/_copy.scss */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -196,22 +248,26 @@ pre {
   padding: 1.6em;
 }
 
+/* line 32, sass/typography/_copy.scss */
 code, kbd, tt, var {
   font-size: 15px;
   font-size: 1.5rem;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
+/* line 37, sass/typography/_copy.scss */
 abbr, acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
+/* line 42, sass/typography/_copy.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
+/* line 47, sass/typography/_copy.scss */
 sup,
 sub {
   font-size: 75%;
@@ -221,18 +277,22 @@ sub {
   vertical-align: baseline;
 }
 
+/* line 56, sass/typography/_copy.scss */
 sup {
   bottom: 1ex;
 }
 
+/* line 60, sass/typography/_copy.scss */
 sub {
   top: .5ex;
 }
 
+/* line 64, sass/typography/_copy.scss */
 small {
   font-size: 75%;
 }
 
+/* line 68, sass/typography/_copy.scss */
 big {
   font-size: 125%;
 }
@@ -240,15 +300,55 @@ big {
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
-.container {
-  width: 100%;
-  margin: 0 auto -5em;
+/* line 1, sass/elements/_elements.scss */
+* {
+  margin: 0;
 }
 
+/* line 5, sass/elements/_elements.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 9, sass/elements/_elements.scss */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+  display: block;
+}
+
+/* line 16, sass/elements/_elements.scss */
+.inner-container {
+  width: 95%;
+  margin: 50px auto;
+}
+
+/* creating sticky footer */
+/* line 22, sass/elements/_elements.scss */
+.container:after {
+  content: “”;
+  display: block;
+}
+
+/* line 27, sass/elements/_elements.scss */
+.entry-title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+/* line 33, sass/elements/_elements.scss */
+.site-footer, .container:after {
+  height: 5em;
+}
+
+/* line 37, sass/elements/_elements.scss */
 body {
   min-width: 325px;
 }
 
+/* line 41, sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -256,32 +356,39 @@ hr {
   margin-bottom: 1.5em;
 }
 
+/* line 1, sass/elements/_lists.scss */
 ul, ol {
   margin: 0 0 1.5em 3em;
 }
 
+/* line 5, sass/elements/_lists.scss */
 ul {
   list-style: disc;
 }
 
+/* line 9, sass/elements/_lists.scss */
 ol {
   list-style: decimal;
 }
 
+/* line 13, sass/elements/_lists.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
+/* line 19, sass/elements/_lists.scss */
 dt {
   font-weight: bold;
 }
 
+/* line 23, sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
 
+/* line 50, sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -289,15 +396,18 @@ img {
   /* Adhere to container width. */
 }
 
+/* line 55, sass/elements/_elements.scss */
 figure {
   margin: 0;
 }
 
+/* line 1, sass/elements/_tables.scss */
 table {
   margin: 0 0 1.5em;
   width: 100%;
 }
 
+/* line 6, sass/elements/_tables.scss */
 th {
   font-weight: bold;
 }
@@ -305,6 +415,7 @@ th {
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
+/* line 1, sass/forms/_forms.scss */
 button,
 input,
 select,
@@ -317,6 +428,7 @@ textarea {
   /* Improves appearance and consistency in all browsers */
 }
 
+/* line 1, sass/forms/_buttons.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -337,6 +449,7 @@ input[type="submit"] {
   transition: background-color 0.4s ease-in-out;
 }
 
+/* line 21, sass/forms/_buttons.scss */
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -347,6 +460,7 @@ input[type="submit"]:hover {
   color: black;
 }
 
+/* line 31, sass/forms/_buttons.scss */
 button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -359,12 +473,14 @@ input[type="submit"]:active {
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
+/* line 1, sass/forms/_fields.scss */
 input[type="checkbox"],
 input[type="radio"] {
   padding: 0;
   /* Addresses excess padding in IE8/9 */
 }
 
+/* line 6, sass/forms/_fields.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
@@ -374,11 +490,13 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
+/* line 13, sass/forms/_fields.scss */
 input[type="search"]::-webkit-search-decoration {
   /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
   -webkit-appearance: none;
 }
 
+/* line 17, sass/forms/_fields.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
@@ -386,6 +504,7 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
+/* line 23, sass/forms/_fields.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -400,6 +519,7 @@ textarea {
   border-radius: 3px;
 }
 
+/* line 34, sass/forms/_fields.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -409,6 +529,7 @@ textarea:focus {
   color: #111;
 }
 
+/* line 43, sass/forms/_fields.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -417,6 +538,7 @@ input[type="search"] {
   padding: 3px;
 }
 
+/* line 51, sass/forms/_fields.scss */
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -432,12 +554,15 @@ textarea {
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
+/* line 1, sass/navigation/_links.scss */
 a {
   color: royalblue;
 }
+/* line 4, sass/navigation/_links.scss */
 a:visited {
   color: purple;
 }
+/* line 7, sass/navigation/_links.scss */
 a:hover, a:focus, a:active {
   color: midnightblue;
 }
@@ -445,6 +570,7 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
+/* line 1, sass/navigation/_menus.scss */
 .main-navigation {
   clear: both;
   display: block;
@@ -452,12 +578,14 @@ a:hover, a:focus, a:active {
   width: 100%;
   margin-bottom: 15px;
 }
+/* line 8, sass/navigation/_menus.scss */
 .main-navigation ul {
   list-style: none;
   margin: 0 auto;
   padding-left: 0;
   width: 100%;
 }
+/* line 14, sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -466,22 +594,28 @@ a:hover, a:focus, a:active {
   left: -999em;
   z-index: 99999;
 }
+/* line 21, sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
+/* line 26, sass/navigation/_menus.scss */
 .main-navigation ul ul li {
   border: 2px solid red;
 }
+/* line 28, sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul {
   left: 100%;
 }
+/* line 33, sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
+/* line 44, sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul {
   left: auto;
 }
+/* line 48, sass/navigation/_menus.scss */
 .main-navigation li {
   float: left;
   width: 19%;
@@ -493,20 +627,24 @@ a:hover, a:focus, a:active {
   border-radius: 2px;
   color: white;
 }
+/* line 60, sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
+/* line 65, sass/navigation/_menus.scss */
 .main-navigation .current-menu-item, .main-navigation .current_page_item {
   background-color: #090c10;
   border: 3px solid white;
 }
+/* line 68, sass/navigation/_menus.scss */
 .main-navigation .current-menu-item a, .main-navigation .current_page_item a {
   background-color: white;
   color: black;
   height: 90%;
 }
 
+/* line 78, sass/navigation/_menus.scss */
 .menu-item {
   border: 3px solid rgba(255, 255, 255, 0);
   color: white;
@@ -514,14 +652,17 @@ a:hover, a:focus, a:active {
   -webkit-transition: all 0.15s linear;
   transition: all 0.15s linear;
 }
+/* line 83, sass/navigation/_menus.scss */
 .menu-item a {
   color: white;
 }
+/* line 87, sass/navigation/_menus.scss */
 .menu-item:hover, .menu-item:active, .menu-item:focus, .menu-item .active {
   border: 3px solid white;
 }
 
 /* Small menu */
+/* line 94, sass/navigation/_menus.scss */
 .menu-toggle {
   display: none;
   margin: 5px auto 20px;
@@ -534,14 +675,17 @@ a:hover, a:focus, a:active {
 }
 
 @media screen and (max-width: 600px) {
+  /* line 107, sass/navigation/_menus.scss */
   .site-header {
     height: 150px;
   }
 
+  /* line 111, sass/navigation/_menus.scss */
   .main-navigation ul {
     margin-top: 5px;
   }
 
+  /* line 114, sass/navigation/_menus.scss */
   .main-navigation li {
     float: left;
     height: 45.8px;
@@ -553,35 +697,42 @@ a:hover, a:focus, a:active {
     border-radius: 0;
     background-color: #090c10;
   }
+  /* line 124, sass/navigation/_menus.scss */
   .main-navigation li a {
     color: white;
     margin-top: 5px;
     margin-bottom: 5px;
   }
 
+  /* line 131, sass/navigation/_menus.scss */
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
     margin-bottom: 20px;
   }
 
+  /* line 137, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
   }
 
+  /* line 140, sass/navigation/_menus.scss */
   #menu-primary-menu {
     margin-top: 15px;
   }
 
+  /* line 144, sass/navigation/_menus.scss */
   .menu-item:hover {
     margin-top: 0;
   }
 
+  /* line 148, sass/navigation/_menus.scss */
   .main-navigation .current-menu-item a,
   .main-navigation .current_page_item a {
     height: 76%;
   }
 }
+/* line 155, sass/navigation/_menus.scss */
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -589,6 +740,7 @@ a:hover, a:focus, a:active {
   overflow: hidden;
 }
 
+/* line 162, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -596,6 +748,7 @@ a:hover, a:focus, a:active {
   width: 50%;
 }
 
+/* line 169, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
@@ -608,6 +761,7 @@ a:hover, a:focus, a:active {
 6.0 Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers */
+/* line 2, sass/modules/_accessibility.scss */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -615,6 +769,7 @@ a:hover, a:focus, a:active {
   width: 1px;
   overflow: hidden;
 }
+/* line 9, sass/modules/_accessibility.scss */
 .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
   background-color: #f1f1f1;
   background-clip: padding-box;
@@ -642,18 +797,21 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 7.0 Alignments
 --------------------------------------------------------------*/
+/* line 1, sass/modules/_alignments.scss */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.5em;
 }
 
+/* line 7, sass/modules/_alignments.scss */
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
 }
 
+/* line 13, sass/modules/_alignments.scss */
 .aligncenter {
   display: block;
   margin: 0 auto;
@@ -662,6 +820,7 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 8.0 Clearings
 --------------------------------------------------------------*/
+/* line 1, sass/modules/_clearings.scss */
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -678,6 +837,7 @@ a:hover, a:focus, a:active {
   display: table;
 }
 
+/* line 16, sass/modules/_clearings.scss */
 .clear:after,
 .entry-content:after,
 .comment-content:after,
@@ -690,15 +850,18 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
+/* line 1, sass/site/secondary/_widgets.scss */
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets */
 }
+/* line 5, sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
 }
 
 /* Search widget */
+/* line 11, sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none;
 }
@@ -706,6 +869,7 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
+/* line 2, sass/site/_site.scss */
 html {
   height: 100% !important;
 }
@@ -713,51 +877,61 @@ html {
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
+/* line 1, sass/site/primary/_posts-and-pages.scss */
 .sticky {
   display: block;
 }
 
+/* line 5, sass/site/primary/_posts-and-pages.scss */
 .hentry {
-  margin: 0 0 1.5em;
+  margin: 0;
 }
 
+/* line 9, sass/site/primary/_posts-and-pages.scss */
 .byline,
 .updated:not(.published) {
   display: none;
 }
 
+/* line 14, sass/site/primary/_posts-and-pages.scss */
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
 
+/* line 19, sass/site/primary/_posts-and-pages.scss */
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
 
+/* line 25, sass/site/primary/_posts-and-pages.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
 
 @media screen and (max-width: 600px) {
+  /* line 3, sass/layout/_header.scss */
   .site-header {
     background-color: #090c10;
     height: 150px;
   }
 
+  /* line 8, sass/layout/_header.scss */
   .site-title, .site-description {
     margin-left: 2%;
   }
 
+  /* line 12, sass/layout/_header.scss */
   .site-title {
     font-size: 3em;
     margin-left: 10px;
   }
 }
 @media screen and (min-width: 601px) {
+  /* line 21, sass/layout/_header.scss */
   .site-header {
     background-color: #090c10;
     width: 100%;
@@ -765,25 +939,78 @@ html {
     height: 120px;
   }
 
+  /* line 28, sass/layout/_header.scss */
   .site-title, .site-description {
     margin-left: 2%;
   }
 
+  /* line 32, sass/layout/_header.scss */
   .site-title {
     font-size: 3em;
     margin-left: 10px;
   }
 }
+/* line 1, sass/layout/_main-content.scss */
 .site-content {
-  width: 95%;
+  content: "";
+  display: table;
+  max-width: 80.5em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   margin: 0 auto;
 }
 
+/* line 6, sass/layout/_main-content.scss */
+.landing {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 100%;
+}
+/* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+.landing:last-child {
+  margin-right: 0;
+}
+/* line 8, sass/layout/_main-content.scss */
+.landing .entry-content {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 31.91489%;
+  margin-left: 8.51064%;
+  margin-top: 100px;
+}
+/* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+.landing .entry-content:last-child {
+  margin-right: 0;
+}
+/* line 14, sass/layout/_main-content.scss */
+.landing .slider {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 31.91489%;
+  margin-left: 17.02128%;
+  margin-right: 0;
+  margin-top: 50px;
+}
+/* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+.landing .slider:last-child {
+  margin-right: 0;
+}
+
+/* line 1, sass/layout/_footer.scss */
 .site-footer {
-  width: 95%;
-  margin: 0 auto;
+  content: "";
+  display: table;
+  max-width: 80.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 50px auto 0;
 }
 
+/* line 6, sass/layout/_footer.scss */
 .push, .footer {
   height: 5em;
 }
@@ -791,6 +1018,7 @@ html {
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
+/* line 1, sass/site/primary/_asides.scss */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
@@ -799,10 +1027,12 @@ html {
 /*--------------------------------------------------------------
 10.3 Comments
 --------------------------------------------------------------*/
+/* line 1, sass/site/primary/_comments.scss */
 .comment-content a {
   word-wrap: break-word;
 }
 
+/* line 4, sass/site/primary/_comments.scss */
 .bypostauthor {
   display: block;
 }
@@ -811,6 +1041,7 @@ html {
 11.0 Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* line 2, sass/modules/_infinite-scroll.scss */
 .infinite-scroll .paging-navigation,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
@@ -818,6 +1049,7 @@ html {
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+/* line 8, sass/modules/_infinite-scroll.scss */
 .infinity-end.neverending .site-footer {
   display: block;
 }
@@ -825,6 +1057,7 @@ html {
 /*--------------------------------------------------------------
 12.0 Media
 --------------------------------------------------------------*/
+/* line 1, sass/media/_media.scss */
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
@@ -835,27 +1068,44 @@ html {
 }
 
 /* Make sure embeds and iframes fit their containers */
+/* line 11, sass/media/_media.scss */
 embed,
 iframe,
 object {
   max-width: 100%;
 }
 
+/* line 17, sass/media/_media.scss */
+.slider-image {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 100%;
+}
+/* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+.slider-image:last-child {
+  margin-right: 0;
+}
+
 /*--------------------------------------------------------------
 12.1 Captions
 --------------------------------------------------------------*/
+/* line 1, sass/media/_captions.scss */
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
+/* line 5, sass/media/_captions.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin: 0 auto;
 }
+/* line 9, sass/media/_captions.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
+/* line 14, sass/media/_captions.scss */
 .wp-caption-text {
   text-align: center;
 }
@@ -863,10 +1113,12 @@ object {
 /*--------------------------------------------------------------
 12.2 Galleries
 --------------------------------------------------------------*/
+/* line 1, sass/media/_galleries.scss */
 .gallery {
   margin-bottom: 1.5em;
 }
 
+/* line 5, sass/media/_galleries.scss */
 .gallery-item {
   display: inline-block;
   text-align: center;
@@ -874,38 +1126,47 @@ object {
   width: 100%;
 }
 
+/* line 12, sass/media/_galleries.scss */
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
 
+/* line 16, sass/media/_galleries.scss */
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
 }
 
+/* line 20, sass/media/_galleries.scss */
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
 
+/* line 24, sass/media/_galleries.scss */
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
 
+/* line 28, sass/media/_galleries.scss */
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
 
+/* line 32, sass/media/_galleries.scss */
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
 
+/* line 36, sass/media/_galleries.scss */
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
 
+/* line 40, sass/media/_galleries.scss */
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
 
+/* line 44, sass/media/_galleries.scss */
 .gallery-caption {
   display: block;
 }
