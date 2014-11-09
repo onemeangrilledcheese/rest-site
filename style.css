@@ -65,7 +65,7 @@ body:before {
   left: 0;
   margin: 0 auto;
   max-width: 80.5em;
-  opacity: 0.4;
+  opacity: 0.7;
   position: fixed;
   right: 0;
   width: 100%;
@@ -583,7 +583,7 @@ a:hover, a:focus, a:active {
   list-style: none;
   margin: 0 auto;
   padding-left: 0;
-  width: 100%;
+  width: 81%;
 }
 /* line 14, sass/navigation/_menus.scss */
 .main-navigation ul ul {
@@ -961,7 +961,8 @@ html {
   margin: 0 auto;
 }
 
-/* line 6, sass/layout/_main-content.scss */
+/* Landing page styles */
+/* line 8, sass/layout/_main-content.scss */
 .landing {
   float: left;
   display: block;
@@ -972,32 +973,35 @@ html {
 .landing:last-child {
   margin-right: 0;
 }
-/* line 8, sass/layout/_main-content.scss */
-.landing .entry-content {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 31.91489%;
-  margin-left: 8.51064%;
-  margin-top: 100px;
+@media screen and (min-width: 1100px) {
+  /* line 10, sass/layout/_main-content.scss */
+  .landing .entry-content {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 57.44681%;
+    margin-top: 100px;
+    padding: 0 85px 0 0;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .landing .entry-content:last-child {
+    margin-right: 0;
+  }
 }
-/* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
-.landing .entry-content:last-child {
-  margin-right: 0;
-}
-/* line 14, sass/layout/_main-content.scss */
-.landing .slider {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 31.91489%;
-  margin-left: 17.02128%;
-  margin-right: 0;
-  margin-top: 50px;
-}
-/* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
-.landing .slider:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1100px) {
+  /* line 18, sass/layout/_main-content.scss */
+  .landing .slider {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 40.42553%;
+    margin-right: 0;
+    margin-top: 50px;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .landing .slider:last-child {
+    margin-right: 0;
+  }
 }
 
 /* line 1, sass/layout/_footer.scss */
