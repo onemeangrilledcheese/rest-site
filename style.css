@@ -310,45 +310,46 @@ html, body {
   height: 100%;
 }
 
-/* line 9, sass/elements/_elements.scss */
+/* line 10, sass/elements/_elements.scss */
 .container {
+  min-width: 320px;
   width: 100%;
   margin: 0 auto;
   min-height: 100%;
   display: block;
 }
 
-/* line 16, sass/elements/_elements.scss */
+/* line 18, sass/elements/_elements.scss */
 .inner-container {
   width: 95%;
-  margin: 50px auto;
+  margin: 50px auto 0;
 }
 
 /* creating sticky footer */
-/* line 22, sass/elements/_elements.scss */
+/* line 24, sass/elements/_elements.scss */
 .container:after {
   content: “”;
   display: block;
 }
 
-/* line 27, sass/elements/_elements.scss */
+/* line 29, sass/elements/_elements.scss */
 .entry-title {
   text-align: center;
   font-size: 3em;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
-/* line 33, sass/elements/_elements.scss */
+/* line 35, sass/elements/_elements.scss */
 .site-footer, .container:after {
   height: 5em;
 }
 
-/* line 37, sass/elements/_elements.scss */
+/* line 39, sass/elements/_elements.scss */
 body {
   min-width: 325px;
 }
 
-/* line 41, sass/elements/_elements.scss */
+/* line 43, sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -388,7 +389,7 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 50, sass/elements/_elements.scss */
+/* line 52, sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -396,7 +397,7 @@ img {
   /* Adhere to container width. */
 }
 
-/* line 55, sass/elements/_elements.scss */
+/* line 57, sass/elements/_elements.scss */
 figure {
   margin: 0;
 }
@@ -576,16 +577,15 @@ a:hover, a:focus, a:active {
   display: block;
   float: left;
   width: 100%;
-  margin-bottom: 15px;
 }
-/* line 8, sass/navigation/_menus.scss */
+/* line 7, sass/navigation/_menus.scss */
 .main-navigation ul {
   list-style: none;
   margin: 0 auto;
   padding-left: 0;
   width: 81%;
 }
-/* line 14, sass/navigation/_menus.scss */
+/* line 13, sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -594,28 +594,28 @@ a:hover, a:focus, a:active {
   left: -999em;
   z-index: 99999;
 }
-/* line 21, sass/navigation/_menus.scss */
+/* line 20, sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 26, sass/navigation/_menus.scss */
+/* line 25, sass/navigation/_menus.scss */
 .main-navigation ul ul li {
   border: 2px solid red;
 }
-/* line 28, sass/navigation/_menus.scss */
+/* line 27, sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul {
   left: 100%;
 }
-/* line 33, sass/navigation/_menus.scss */
+/* line 32, sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
-/* line 44, sass/navigation/_menus.scss */
+/* line 43, sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul {
   left: auto;
 }
-/* line 48, sass/navigation/_menus.scss */
+/* line 47, sass/navigation/_menus.scss */
 .main-navigation li {
   float: left;
   width: 19%;
@@ -627,24 +627,24 @@ a:hover, a:focus, a:active {
   border-radius: 2px;
   color: white;
 }
-/* line 60, sass/navigation/_menus.scss */
+/* line 59, sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
-/* line 65, sass/navigation/_menus.scss */
+/* line 64, sass/navigation/_menus.scss */
 .main-navigation .current-menu-item, .main-navigation .current_page_item {
   background-color: #090c10;
   border: 3px solid white;
 }
-/* line 68, sass/navigation/_menus.scss */
+/* line 67, sass/navigation/_menus.scss */
 .main-navigation .current-menu-item a, .main-navigation .current_page_item a {
   background-color: white;
   color: black;
   height: 90%;
 }
 
-/* line 78, sass/navigation/_menus.scss */
+/* line 77, sass/navigation/_menus.scss */
 .menu-item {
   border: 3px solid rgba(255, 255, 255, 0);
   color: white;
@@ -652,17 +652,17 @@ a:hover, a:focus, a:active {
   -webkit-transition: all 0.15s linear;
   transition: all 0.15s linear;
 }
-/* line 83, sass/navigation/_menus.scss */
+/* line 82, sass/navigation/_menus.scss */
 .menu-item a {
   color: white;
 }
-/* line 87, sass/navigation/_menus.scss */
+/* line 86, sass/navigation/_menus.scss */
 .menu-item:hover, .menu-item:active, .menu-item:focus, .menu-item .active {
   border: 3px solid white;
 }
 
 /* Small menu */
-/* line 94, sass/navigation/_menus.scss */
+/* line 93, sass/navigation/_menus.scss */
 .menu-toggle {
   display: none;
   margin: 5px auto 20px;
@@ -675,17 +675,17 @@ a:hover, a:focus, a:active {
 }
 
 @media screen and (max-width: 600px) {
-  /* line 107, sass/navigation/_menus.scss */
+  /* line 106, sass/navigation/_menus.scss */
   .site-header {
     height: 150px;
   }
 
-  /* line 111, sass/navigation/_menus.scss */
+  /* line 110, sass/navigation/_menus.scss */
   .main-navigation ul {
     margin-top: 5px;
   }
 
-  /* line 114, sass/navigation/_menus.scss */
+  /* line 113, sass/navigation/_menus.scss */
   .main-navigation li {
     float: left;
     height: 45.8px;
@@ -697,42 +697,42 @@ a:hover, a:focus, a:active {
     border-radius: 0;
     background-color: #090c10;
   }
-  /* line 124, sass/navigation/_menus.scss */
+  /* line 123, sass/navigation/_menus.scss */
   .main-navigation li a {
     color: white;
     margin-top: 5px;
     margin-bottom: 5px;
   }
 
-  /* line 131, sass/navigation/_menus.scss */
+  /* line 130, sass/navigation/_menus.scss */
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
     margin-bottom: 20px;
   }
 
-  /* line 137, sass/navigation/_menus.scss */
+  /* line 136, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
   }
 
-  /* line 140, sass/navigation/_menus.scss */
+  /* line 139, sass/navigation/_menus.scss */
   #menu-primary-menu {
     margin-top: 15px;
   }
 
-  /* line 144, sass/navigation/_menus.scss */
+  /* line 143, sass/navigation/_menus.scss */
   .menu-item:hover {
     margin-top: 0;
   }
 
-  /* line 148, sass/navigation/_menus.scss */
+  /* line 147, sass/navigation/_menus.scss */
   .main-navigation .current-menu-item a,
   .main-navigation .current_page_item a {
     height: 76%;
   }
 }
-/* line 155, sass/navigation/_menus.scss */
+/* line 154, sass/navigation/_menus.scss */
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -740,7 +740,7 @@ a:hover, a:focus, a:active {
   overflow: hidden;
 }
 
-/* line 162, sass/navigation/_menus.scss */
+/* line 161, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -748,7 +748,7 @@ a:hover, a:focus, a:active {
   width: 50%;
 }
 
-/* line 169, sass/navigation/_menus.scss */
+/* line 168, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
@@ -928,10 +928,11 @@ html {
   .site-title {
     font-size: 3em;
     margin-left: 10px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 601px) {
-  /* line 21, sass/layout/_header.scss */
+  /* line 22, sass/layout/_header.scss */
   .site-header {
     background-color: #090c10;
     width: 100%;
@@ -939,12 +940,12 @@ html {
     height: 120px;
   }
 
-  /* line 28, sass/layout/_header.scss */
+  /* line 29, sass/layout/_header.scss */
   .site-title, .site-description {
     margin-left: 2%;
   }
 
-  /* line 32, sass/layout/_header.scss */
+  /* line 33, sass/layout/_header.scss */
   .site-title {
     font-size: 3em;
     margin-left: 10px;
@@ -964,42 +965,133 @@ html {
 /* Landing page styles */
 /* line 8, sass/layout/_main-content.scss */
 .landing {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 100%;
+  content: "";
+  display: table;
+  max-width: 80.5em;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
-.landing:last-child {
-  margin-right: 0;
+@media screen and (min-width: 320px) {
+  /* line 11, sass/layout/_main-content.scss */
+  .landing .slider {
+    float: left;
+    display: block;
+    margin-right: 14.28571%;
+    width: 100%;
+    margin-right: 0;
+    margin: 50px auto 0 3%;
+    max-width: 93%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .landing .slider:last-child {
+    margin-right: 0;
+  }
 }
-@media screen and (min-width: 1100px) {
-  /* line 10, sass/layout/_main-content.scss */
-  .landing .entry-content {
+@media screen and (min-width: 480px) {
+  /* line 11, sass/layout/_main-content.scss */
+  .landing .slider {
+    float: left;
+    display: block;
+    margin-right: 6.66667%;
+    width: 46.66667%;
+    margin-left: 51.06383%;
+    margin-top: 50px;
+    max-width: 93%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .landing .slider:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 11, sass/layout/_main-content.scss */
+  .landing .slider {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 38.46154%;
+    margin-top: 50px;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .landing .slider:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  /* line 11, sass/layout/_main-content.scss */
+  .landing .slider {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 57.44681%;
-    margin-top: 100px;
-    padding: 0 85px 0 0;
+    width: 40.42553%;
+    margin-left: 4.25532%;
+    margin-top: 50px;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .landing .slider:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 320px) {
+  /* line 35, sass/layout/_main-content.scss */
+  .landing .entry-content {
+    float: left;
+    display: block;
+    margin-right: 14.28571%;
+    width: 100%;
+    margin-right: 0;
+    margin: 50px 0 0 8px;
+    font-size: 0.95em;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing .entry-content:last-child {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 1100px) {
-  /* line 18, sass/layout/_main-content.scss */
-  .landing .slider {
+@media screen and (min-width: 480px) {
+  /* line 35, sass/layout/_main-content.scss */
+  .landing .entry-content {
     float: left;
     display: block;
-    margin-right: 2.12766%;
-    width: 40.42553%;
+    margin-right: 6.66667%;
+    width: 46.66667%;
+    margin-left: -102.12766%;
+    margin-top: 50px;
+    width: 45%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .landing .entry-content:last-child {
     margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 35, sass/layout/_main-content.scss */
+  .landing .entry-content {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 48.71795%;
+    margin-right: 0;
+    padding: 0 55px 0 0;
     margin-top: 50px;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
-  .landing .slider:last-child {
+  .landing .entry-content:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  /* line 35, sass/layout/_main-content.scss */
+  .landing .entry-content {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 48.93617%;
+    padding: 0 85px 0 0;
+    margin-top: 100px;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .landing .entry-content:last-child {
     margin-right: 0;
   }
 }
@@ -1012,9 +1104,10 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin: 50px auto 0;
+  width: 90%;
 }
 
-/* line 6, sass/layout/_footer.scss */
+/* line 7, sass/layout/_footer.scss */
 .push, .footer {
   height: 5em;
 }
