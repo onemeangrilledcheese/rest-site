@@ -962,7 +962,7 @@ html {
   margin: 0 auto;
 }
 
-/* Landing page styles */
+/* Landing-page styles */
 /* line 8, sass/layout/_main-content.scss */
 .landing {
   content: "";
@@ -972,60 +972,66 @@ html {
   margin-right: auto;
 }
 @media screen and (min-width: 320px) {
-  /* line 11, sass/layout/_main-content.scss */
+  /* line 10, sass/layout/_main-content.scss */
   .landing .slider {
     float: left;
     display: block;
     margin-right: 14.28571%;
     width: 100%;
     margin-right: 0;
+    width: 95%;
     margin: 50px auto 0 3%;
-    max-width: 93%;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing .slider:last-child {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 480px) {
-  /* line 11, sass/layout/_main-content.scss */
+@media screen and (min-width: 650px) {
+  /* line 10, sass/layout/_main-content.scss */
   .landing .slider {
     float: left;
     display: block;
-    margin-right: 6.66667%;
-    width: 46.66667%;
+    margin-right: 3.22581%;
+    width: 48.3871%;
     margin-left: 51.06383%;
+    margin-right: 0;
     margin-top: 50px;
-    max-width: 93%;
+    max-width: 450px;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing .slider:last-child {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 768px) {
-  /* line 11, sass/layout/_main-content.scss */
+@media screen and (min-width: 850px) {
+  /* line 10, sass/layout/_main-content.scss */
   .landing .slider {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 38.46154%;
+    width: 48.71795%;
+    margin-left: 51.06383%;
+    margin-right: 0;
     margin-top: 50px;
+    max-width: 450px;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing .slider:last-child {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 1000px) {
-  /* line 11, sass/layout/_main-content.scss */
+@media screen and (min-width: 1150px) {
+  /* line 10, sass/layout/_main-content.scss */
   .landing .slider {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 40.42553%;
-    margin-left: 4.25532%;
+    width: 48.93617%;
+    margin-left: 55.31915%;
+    margin-right: 0;
     margin-top: 50px;
+    max-width: 450px;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing .slider:last-child {
@@ -1033,7 +1039,7 @@ html {
   }
 }
 @media screen and (min-width: 320px) {
-  /* line 35, sass/layout/_main-content.scss */
+  /* line 40, sass/layout/_main-content.scss */
   .landing .entry-content {
     float: left;
     display: block;
@@ -1042,53 +1048,57 @@ html {
     margin-right: 0;
     margin: 50px 0 0 8px;
     font-size: 0.95em;
+    width: 95%;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing .entry-content:last-child {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 480px) {
-  /* line 35, sass/layout/_main-content.scss */
+@media screen and (min-width: 650px) {
+  /* line 40, sass/layout/_main-content.scss */
   .landing .entry-content {
     float: left;
     display: block;
-    margin-right: 6.66667%;
-    width: 46.66667%;
-    margin-left: -102.12766%;
+    margin-right: 3.22581%;
+    width: 48.3871%;
+    margin-left: -97.87234%;
+    margin-right: 0;
+    padding: 0 20px 0 0;
     margin-top: 50px;
-    width: 45%;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing .entry-content:last-child {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 768px) {
-  /* line 35, sass/layout/_main-content.scss */
+@media screen and (min-width: 850px) {
+  /* line 40, sass/layout/_main-content.scss */
   .landing .entry-content {
     float: left;
     display: block;
     margin-right: 2.5641%;
     width: 48.71795%;
-    margin-right: 0;
-    padding: 0 55px 0 0;
+    margin-left: -97.87234%;
     margin-top: 50px;
+    max-width: 450px;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing .entry-content:last-child {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 1000px) {
-  /* line 35, sass/layout/_main-content.scss */
+@media screen and (min-width: 1150px) {
+  /* line 40, sass/layout/_main-content.scss */
   .landing .entry-content {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 48.93617%;
-    padding: 0 85px 0 0;
-    margin-top: 100px;
+    width: 57.44681%;
+    margin-left: -110.6383%;
+    padding: 0 55px 0 0;
+    margin-top: 45px;
+    font-size: 1.1em;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing .entry-content:last-child {
@@ -1170,18 +1180,6 @@ embed,
 iframe,
 object {
   max-width: 100%;
-}
-
-/* line 17, sass/media/_media.scss */
-.slider-image {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 100%;
-}
-/* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
-.slider-image:last-child {
-  margin-right: 0;
 }
 
 /*--------------------------------------------------------------
