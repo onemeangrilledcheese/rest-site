@@ -51,28 +51,6 @@ and Blueprint http://www.blueprintcss.org/
   box-sizing: border-box;
 }
 
-/* line 11, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_visual-grid.scss */
-body:before {
-  content: '';
-  display: inline-block;
-  background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
-  background-image: -webkit-linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
-  background-image: -moz-linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
-  background-image: -ms-linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
-  background-image: -o-linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
-  background-image: linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 80.5em;
-  opacity: 0.7;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  pointer-events: none;
-  z-index: -1;
-}
-
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
 /*--------------------------------------------------------------
 1.0 Reset
@@ -583,9 +561,28 @@ a:hover, a:focus, a:active {
   list-style: none;
   margin: 0 auto;
   padding-left: 0;
-  width: 81%;
+  width: 95%;
 }
-/* line 13, sass/navigation/_menus.scss */
+@media screen and (min-width: 850px) {
+  /* line 7, sass/navigation/_menus.scss */
+  .main-navigation ul {
+    width: 91%;
+  }
+}
+@media screen and (min-width: 650px) {
+  /* line 7, sass/navigation/_menus.scss */
+  .main-navigation ul {
+    width: 95%;
+    max-width: 950px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  /* line 7, sass/navigation/_menus.scss */
+  .main-navigation ul {
+    width: 95%;
+  }
+}
+/* line 22, sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -594,28 +591,28 @@ a:hover, a:focus, a:active {
   left: -999em;
   z-index: 99999;
 }
-/* line 20, sass/navigation/_menus.scss */
+/* line 29, sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 25, sass/navigation/_menus.scss */
+/* line 34, sass/navigation/_menus.scss */
 .main-navigation ul ul li {
   border: 2px solid red;
 }
-/* line 27, sass/navigation/_menus.scss */
+/* line 36, sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul {
   left: 100%;
 }
-/* line 32, sass/navigation/_menus.scss */
+/* line 41, sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
-/* line 43, sass/navigation/_menus.scss */
+/* line 52, sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul {
   left: auto;
 }
-/* line 47, sass/navigation/_menus.scss */
+/* line 56, sass/navigation/_menus.scss */
 .main-navigation li {
   float: left;
   width: 19%;
@@ -627,24 +624,24 @@ a:hover, a:focus, a:active {
   border-radius: 2px;
   color: white;
 }
-/* line 59, sass/navigation/_menus.scss */
+/* line 68, sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
-/* line 64, sass/navigation/_menus.scss */
+/* line 73, sass/navigation/_menus.scss */
 .main-navigation .current-menu-item, .main-navigation .current_page_item {
   background-color: #090c10;
   border: 3px solid white;
 }
-/* line 67, sass/navigation/_menus.scss */
+/* line 76, sass/navigation/_menus.scss */
 .main-navigation .current-menu-item a, .main-navigation .current_page_item a {
   background-color: white;
   color: black;
   height: 90%;
 }
 
-/* line 77, sass/navigation/_menus.scss */
+/* line 86, sass/navigation/_menus.scss */
 .menu-item {
   border: 3px solid rgba(255, 255, 255, 0);
   color: white;
@@ -652,17 +649,17 @@ a:hover, a:focus, a:active {
   -webkit-transition: all 0.15s linear;
   transition: all 0.15s linear;
 }
-/* line 82, sass/navigation/_menus.scss */
+/* line 91, sass/navigation/_menus.scss */
 .menu-item a {
   color: white;
 }
-/* line 86, sass/navigation/_menus.scss */
+/* line 95, sass/navigation/_menus.scss */
 .menu-item:hover, .menu-item:active, .menu-item:focus, .menu-item .active {
   border: 3px solid white;
 }
 
 /* Small menu */
-/* line 93, sass/navigation/_menus.scss */
+/* line 102, sass/navigation/_menus.scss */
 .menu-toggle {
   display: none;
   margin: 5px auto 20px;
@@ -675,17 +672,17 @@ a:hover, a:focus, a:active {
 }
 
 @media screen and (max-width: 600px) {
-  /* line 106, sass/navigation/_menus.scss */
+  /* line 115, sass/navigation/_menus.scss */
   .site-header {
     height: 150px;
   }
 
-  /* line 110, sass/navigation/_menus.scss */
+  /* line 119, sass/navigation/_menus.scss */
   .main-navigation ul {
     margin-top: 5px;
   }
 
-  /* line 113, sass/navigation/_menus.scss */
+  /* line 122, sass/navigation/_menus.scss */
   .main-navigation li {
     float: left;
     height: 45.8px;
@@ -697,42 +694,42 @@ a:hover, a:focus, a:active {
     border-radius: 0;
     background-color: #090c10;
   }
-  /* line 123, sass/navigation/_menus.scss */
+  /* line 132, sass/navigation/_menus.scss */
   .main-navigation li a {
     color: white;
     margin-top: 5px;
     margin-bottom: 5px;
   }
 
-  /* line 130, sass/navigation/_menus.scss */
+  /* line 139, sass/navigation/_menus.scss */
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
     margin-bottom: 20px;
   }
 
-  /* line 136, sass/navigation/_menus.scss */
+  /* line 145, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
   }
 
-  /* line 139, sass/navigation/_menus.scss */
+  /* line 148, sass/navigation/_menus.scss */
   #menu-primary-menu {
     margin-top: 15px;
   }
 
-  /* line 143, sass/navigation/_menus.scss */
+  /* line 152, sass/navigation/_menus.scss */
   .menu-item:hover {
     margin-top: 0;
   }
 
-  /* line 147, sass/navigation/_menus.scss */
+  /* line 156, sass/navigation/_menus.scss */
   .main-navigation .current-menu-item a,
   .main-navigation .current_page_item a {
     height: 76%;
   }
 }
-/* line 154, sass/navigation/_menus.scss */
+/* line 163, sass/navigation/_menus.scss */
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -740,7 +737,7 @@ a:hover, a:focus, a:active {
   overflow: hidden;
 }
 
-/* line 161, sass/navigation/_menus.scss */
+/* line 170, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -748,7 +745,7 @@ a:hover, a:focus, a:active {
   width: 50%;
 }
 
-/* line 168, sass/navigation/_menus.scss */
+/* line 177, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
@@ -912,7 +909,7 @@ html {
   margin: 0 0 1.5em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   /* line 3, sass/layout/_header.scss */
   .site-header {
     background-color: #090c10;
@@ -931,7 +928,7 @@ html {
     text-align: center;
   }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 651px) {
   /* line 22, sass/layout/_header.scss */
   .site-header {
     background-color: #090c10;
@@ -949,6 +946,7 @@ html {
   .site-title {
     font-size: 3em;
     margin-left: 10px;
+    text-align: center;
   }
 }
 /* line 1, sass/layout/_main-content.scss */
@@ -1082,6 +1080,7 @@ html {
     margin-left: -97.87234%;
     margin-top: 50px;
     max-width: 450px;
+    font-size: 1em;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing .entry-content:last-child {
@@ -1115,9 +1114,10 @@ html {
   margin-right: auto;
   margin: 50px auto 0;
   width: 90%;
+  text-align: center;
 }
 
-/* line 7, sass/layout/_footer.scss */
+/* line 8, sass/layout/_footer.scss */
 .push, .footer {
   height: 5em;
 }
