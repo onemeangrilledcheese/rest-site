@@ -110,74 +110,35 @@ function loadGravatars() {
 /*
  * Put all your regular jQuery in here.
 */
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
 
 
-/*
- * Nav Menu toggle
- *
-*/
+    /*
+     * Nav Menu toggle
+     *
+    */
 
-  $('span.nav-btn').click(function () {
-    $('ul.nav').slideToggle();
-  });
+    $('span.nav-btn').click(function () {
+        $('ul.nav').slideToggle();
+    });
 
-  $(window).resize(function (){
-    if ( $(window).width() > 600 ) {
-      $('ul.nav').removeAttr('style');
-    }
-});
+    $(window).resize(function () {
+        if ($(window).width() > 600) {
+          $('ul.nav').removeAttr('style');
+        }
+    });
 
-/*
- * Works Page toggle between two divs.
- * Show Graphic on page load.
- *
-*/
+    /*
+     * Show active nav item when clicked
+     */
 
-$('#fine-btn').addClass('active');
+    $(".food-name").fitText(1.2, { minFontSize: '35px', maxFontSize: '50px' });
 
-$( '.fine' ).load( 'page-works.php', function() {
-  $(this).show();
-});
-
-$('#graphic-btn').click(function() {
-  $('#fine-btn').removeClass('active');
-  $(this).addClass('active');
-  if ($('.graphic').is(':hidden')) {
-    $('.fine').hide();
-    $('.graphic').addClass("flexed");
-    $('.graphic').slideDown();
-  }
-});
-
-$('#fine-btn').click(function() {
-  $('#graphic-btn').removeClass('active');
-  $(this).addClass('active');
-  if ($('.fine').is(':hidden')) {
-    $('.graphic').hide();
-    $('.fine').slideDown();
-  }
-});
-
-
-
-/*
- * Show active nav item when clicked
- *
-
-$('.nav li').click(function(){
-  $(this).addClass('active')
-  .parent().siblings()
-  .find('a').removeClass('active');
-});
-
-*/
-
-/*
- * Let's fire off the gravatar function
- * You can remove this if you don't need it
-*/
-loadGravatars();
+    /*
+     * Let's fire off the gravatar function
+     * You can remove this if you don't need it
+    */
+    loadGravatars();
 
 }); /* end of as page load scripts */
 

@@ -46,6 +46,8 @@ and Blueprint http://www.blueprintcss.org/
 --------------------------------------------------------------*/
 /* line 2, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_grid.scss */
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -55,6 +57,9 @@ body:before {
   display: inline-block;
   background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
   background-image: -webkit-linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
+  background-image: -moz-linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
+  background-image: -ms-linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
+  background-image: -o-linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
   background-image: linear-gradient(left, transparent 0, #EEE 0, #EEE 6.38298%, transparent 6.38298%, transparent 8.51064%, #EEE 8.51064%, #EEE 14.89362%, transparent 14.89362%, transparent 17.02128%, #EEE 17.02128%, #EEE 23.40426%, transparent 23.40426%, transparent 25.53191%, #EEE 25.53191%, #EEE 31.91489%, transparent 31.91489%, transparent 34.04255%, #EEE 34.04255%, #EEE 40.42553%, transparent 40.42553%, transparent 42.55319%, #EEE 42.55319%, #EEE 48.93617%, transparent 48.93617%, transparent 51.06383%, #EEE 51.06383%, #EEE 57.44681%, transparent 57.44681%, transparent 59.57447%, #EEE 59.57447%, #EEE 65.95745%, transparent 65.95745%, transparent 68.08511%, #EEE 68.08511%, #EEE 74.46809%, transparent 74.46809%, transparent 76.59574%, #EEE 76.59574%, #EEE 82.97872%, transparent 82.97872%, transparent 85.10638%, #EEE 85.10638%, #EEE 91.48936%, transparent 91.48936%, transparent 93.61702%, #EEE 93.61702%, #EEE 100.0%, transparent 100.0%);
   height: 100%;
   left: 0;
@@ -114,6 +119,8 @@ html {
 *:before,
 *:after {
   /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -478,7 +485,9 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
+  -webkit-box-sizing: content-box;
   /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -507,6 +516,7 @@ textarea {
   border: 1px solid #ccc;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -575,20 +585,20 @@ a:hover, a:focus, a:active {
   padding-left: 0;
   width: 95%;
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 650px) {
   /* line 7, sass/navigation/_menus.scss */
   .main-navigation ul {
     width: 91%;
   }
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 900px) {
   /* line 7, sass/navigation/_menus.scss */
   .main-navigation ul {
     width: 95%;
     max-width: 950px;
   }
 }
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1200px) {
   /* line 7, sass/navigation/_menus.scss */
   .main-navigation ul {
     width: 95%;
@@ -783,6 +793,7 @@ a:hover, a:focus, a:active {
   background-color: #f1f1f1;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
@@ -972,7 +983,7 @@ html {
 }
 
 /* Landing-page styles */
-/* line 8, sass/layout/_main-content.scss */
+/* line 9, sass/layout/_main-content.scss */
 .landing {
   content: "";
   display: table;
@@ -980,8 +991,8 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 320px) {
-  /* line 10, sass/layout/_main-content.scss */
+@media screen and (min-width: 200px) {
+  /* line 11, sass/layout/_main-content.scss */
   .landing .slider {
     float: left;
     display: block;
@@ -996,8 +1007,8 @@ html {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 650px) {
-  /* line 10, sass/layout/_main-content.scss */
+@media screen and (min-width: 900px) {
+  /* line 11, sass/layout/_main-content.scss */
   .landing .slider {
     float: left;
     display: block;
@@ -1013,8 +1024,8 @@ html {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 850px) {
-  /* line 10, sass/layout/_main-content.scss */
+@media screen and (min-width: 650px) {
+  /* line 11, sass/layout/_main-content.scss */
   .landing .slider {
     float: left;
     display: block;
@@ -1030,8 +1041,8 @@ html {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 1150px) {
-  /* line 10, sass/layout/_main-content.scss */
+@media screen and (min-width: 1200px) {
+  /* line 11, sass/layout/_main-content.scss */
   .landing .slider {
     float: left;
     display: block;
@@ -1047,8 +1058,8 @@ html {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 320px) {
-  /* line 40, sass/layout/_main-content.scss */
+@media screen and (min-width: 200px) {
+  /* line 41, sass/layout/_main-content.scss */
   .landing .entry-content {
     float: left;
     display: block;
@@ -1064,8 +1075,8 @@ html {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 650px) {
-  /* line 40, sass/layout/_main-content.scss */
+@media screen and (min-width: 900px) {
+  /* line 41, sass/layout/_main-content.scss */
   .landing .entry-content {
     float: left;
     display: block;
@@ -1081,8 +1092,8 @@ html {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 850px) {
-  /* line 40, sass/layout/_main-content.scss */
+@media screen and (min-width: 650px) {
+  /* line 41, sass/layout/_main-content.scss */
   .landing .entry-content {
     float: left;
     display: block;
@@ -1098,8 +1109,8 @@ html {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 1150px) {
-  /* line 40, sass/layout/_main-content.scss */
+@media screen and (min-width: 1200px) {
+  /* line 41, sass/layout/_main-content.scss */
   .landing .entry-content {
     float: left;
     display: block;
@@ -1112,6 +1123,176 @@ html {
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing .entry-content:last-child {
+    margin-right: 0;
+  }
+}
+
+/* Daily-Specials-page styles */
+/* line 77, sass/layout/_main-content.scss */
+.daily-specials {
+  margin-top: 50px;
+  content: "";
+  display: table;
+  max-width: 80.5em;
+  margin-left: auto;
+  margin-right: auto;
+  content: "";
+  display: table;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  /* line 77, sass/layout/_main-content.scss */
+  .daily-specials {
+    width: 70em;
+  }
+}
+@media screen and (min-width: 200px) {
+  /* line 84, sass/layout/_main-content.scss */
+  .daily-specials .food-picture {
+    float: left;
+    display: block;
+    margin-right: 14.28571%;
+    width: 100%;
+    margin: 50px auto 10px 7.5%;
+    width: 85%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .daily-specials .food-picture:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 650px) {
+  /* line 84, sass/layout/_main-content.scss */
+  .daily-specials .food-picture {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 48.3871%;
+    margin: 50px auto 10px 4.5%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .daily-specials .food-picture:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 84, sass/layout/_main-content.scss */
+  .daily-specials .food-picture {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 38.46154%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .daily-specials .food-picture:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 84, sass/layout/_main-content.scss */
+  .daily-specials .food-picture {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 48.93617%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .daily-specials .food-picture:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 650px) {
+  /* line 104, sass/layout/_main-content.scss */
+  .daily-specials .details {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 41.93548%;
+    margin-right: 0;
+    margin: 10% auto 0 2%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .daily-specials .details:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 104, sass/layout/_main-content.scss */
+  .daily-specials .details {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 48.71795%;
+    margin: 8% auto 15%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .daily-specials .details:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 104, sass/layout/_main-content.scss */
+  .daily-specials .details {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 40.42553%;
+    margin: 100px 0 180px 65px;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .daily-specials .details:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 200px) {
+  /* line 119, sass/layout/_main-content.scss */
+  .daily-specials .food-name {
+    float: left;
+    display: block;
+    margin-right: 14.28571%;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .daily-specials .food-name:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 200px) {
+  /* line 126, sass/layout/_main-content.scss */
+  .daily-specials .food-ingredient {
+    float: left;
+    display: block;
+    margin-right: 14.28571%;
+    width: 100%;
+    margin-right: 0;
+    margin: 5px auto 10px;
+    font-size: 0.95em;
+    font-style: italic;
+    text-align: center;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .daily-specials .food-ingredient:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 200px) {
+  /* line 149, sass/layout/_main-content.scss */
+  .daily-specials .food-price {
+    float: left;
+    display: block;
+    margin-right: 14.28571%;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 0;
+    font-style: italic;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .daily-specials .food-price:last-child {
     margin-right: 0;
   }
 }
