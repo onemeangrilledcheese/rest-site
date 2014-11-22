@@ -333,23 +333,42 @@ html, body {
 }
 
 /* line 29, sass/elements/_elements.scss */
-.entry-title {
+.entry-title,
+.entry-meta,
+.entry-content,
+.entry-footer {
   text-align: center;
+}
+
+/* line 37, sass/elements/_elements.scss */
+.entry-content p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 43, sass/elements/_elements.scss */
+.entry-title {
   font-size: 3em;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 35, sass/elements/_elements.scss */
+/* line 49, sass/elements/_elements.scss */
+.entry-content p {
+  text-align: left;
+}
+
+/* line 53, sass/elements/_elements.scss */
 .site-footer, .container:after {
   height: 5em;
 }
 
-/* line 39, sass/elements/_elements.scss */
+/* line 57, sass/elements/_elements.scss */
 body {
   min-width: 325px;
 }
 
-/* line 43, sass/elements/_elements.scss */
+/* line 61, sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -389,7 +408,7 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 52, sass/elements/_elements.scss */
+/* line 70, sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -397,7 +416,7 @@ img {
   /* Adhere to container width. */
 }
 
-/* line 57, sass/elements/_elements.scss */
+/* line 75, sass/elements/_elements.scss */
 figure {
   margin: 0;
 }
@@ -973,17 +992,18 @@ html {
 }
 /* line 1, sass/layout/_main-content.scss */
 .site-content {
-  content: "";
-  display: table;
-  max-width: 80.5em;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   margin: 0 auto;
 }
 
+/* line 6, sass/layout/_main-content.scss */
+.row {
+  height: 100% !important;
+  width: 100%;
+}
+
 /* Landing-page styles */
-/* line 9, sass/layout/_main-content.scss */
+/* line 13, sass/layout/_main-content.scss */
 .landing {
   content: "";
   display: table;
@@ -992,7 +1012,7 @@ html {
   margin-right: auto;
 }
 @media screen and (min-width: 200px) {
-  /* line 11, sass/layout/_main-content.scss */
+  /* line 15, sass/layout/_main-content.scss */
   .landing .slider {
     float: left;
     display: block;
@@ -1008,7 +1028,7 @@ html {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 11, sass/layout/_main-content.scss */
+  /* line 15, sass/layout/_main-content.scss */
   .landing .slider {
     float: left;
     display: block;
@@ -1025,7 +1045,7 @@ html {
   }
 }
 @media screen and (min-width: 650px) {
-  /* line 11, sass/layout/_main-content.scss */
+  /* line 15, sass/layout/_main-content.scss */
   .landing .slider {
     float: left;
     display: block;
@@ -1042,7 +1062,7 @@ html {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 11, sass/layout/_main-content.scss */
+  /* line 15, sass/layout/_main-content.scss */
   .landing .slider {
     float: left;
     display: block;
@@ -1059,7 +1079,7 @@ html {
   }
 }
 @media screen and (min-width: 200px) {
-  /* line 41, sass/layout/_main-content.scss */
+  /* line 45, sass/layout/_main-content.scss */
   .landing .entry-content {
     float: left;
     display: block;
@@ -1076,7 +1096,7 @@ html {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 41, sass/layout/_main-content.scss */
+  /* line 45, sass/layout/_main-content.scss */
   .landing .entry-content {
     float: left;
     display: block;
@@ -1093,7 +1113,7 @@ html {
   }
 }
 @media screen and (min-width: 650px) {
-  /* line 41, sass/layout/_main-content.scss */
+  /* line 45, sass/layout/_main-content.scss */
   .landing .entry-content {
     float: left;
     display: block;
@@ -1110,7 +1130,7 @@ html {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 41, sass/layout/_main-content.scss */
+  /* line 45, sass/layout/_main-content.scss */
   .landing .entry-content {
     float: left;
     display: block;
@@ -1128,7 +1148,7 @@ html {
 }
 
 /* Daily-Specials-page styles */
-/* line 77, sass/layout/_main-content.scss */
+/* line 81, sass/layout/_main-content.scss */
 .daily-specials {
   margin-top: 50px;
   content: "";
@@ -1141,13 +1161,13 @@ html {
   display: block;
 }
 @media screen and (min-width: 1200px) {
-  /* line 77, sass/layout/_main-content.scss */
+  /* line 81, sass/layout/_main-content.scss */
   .daily-specials {
     width: 70em;
   }
 }
 @media screen and (min-width: 200px) {
-  /* line 84, sass/layout/_main-content.scss */
+  /* line 88, sass/layout/_main-content.scss */
   .daily-specials .food-picture {
     float: left;
     display: block;
@@ -1162,7 +1182,7 @@ html {
   }
 }
 @media screen and (min-width: 650px) {
-  /* line 84, sass/layout/_main-content.scss */
+  /* line 88, sass/layout/_main-content.scss */
   .daily-specials .food-picture {
     float: left;
     display: block;
@@ -1176,7 +1196,7 @@ html {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 84, sass/layout/_main-content.scss */
+  /* line 88, sass/layout/_main-content.scss */
   .daily-specials .food-picture {
     float: left;
     display: block;
@@ -1191,12 +1211,13 @@ html {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 84, sass/layout/_main-content.scss */
+  /* line 88, sass/layout/_main-content.scss */
   .daily-specials .food-picture {
     float: left;
     display: block;
     margin-right: 2.12766%;
     width: 48.93617%;
+    max-width: 47%;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .daily-specials .food-picture:last-child {
@@ -1204,7 +1225,7 @@ html {
   }
 }
 @media screen and (min-width: 650px) {
-  /* line 104, sass/layout/_main-content.scss */
+  /* line 109, sass/layout/_main-content.scss */
   .daily-specials .details {
     float: left;
     display: block;
@@ -1219,7 +1240,7 @@ html {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 104, sass/layout/_main-content.scss */
+  /* line 109, sass/layout/_main-content.scss */
   .daily-specials .details {
     float: left;
     display: block;
@@ -1233,7 +1254,7 @@ html {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 104, sass/layout/_main-content.scss */
+  /* line 109, sass/layout/_main-content.scss */
   .daily-specials .details {
     float: left;
     display: block;
@@ -1247,7 +1268,7 @@ html {
   }
 }
 @media screen and (min-width: 200px) {
-  /* line 119, sass/layout/_main-content.scss */
+  /* line 124, sass/layout/_main-content.scss */
   .daily-specials .food-name {
     float: left;
     display: block;
@@ -1262,7 +1283,7 @@ html {
   }
 }
 @media screen and (min-width: 200px) {
-  /* line 126, sass/layout/_main-content.scss */
+  /* line 131, sass/layout/_main-content.scss */
   .daily-specials .food-ingredient {
     float: left;
     display: block;
@@ -1280,7 +1301,7 @@ html {
   }
 }
 @media screen and (min-width: 200px) {
-  /* line 149, sass/layout/_main-content.scss */
+  /* line 141, sass/layout/_main-content.scss */
   .daily-specials .food-price {
     float: left;
     display: block;
@@ -1293,6 +1314,224 @@ html {
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .daily-specials .food-price:last-child {
+    margin-right: 0;
+  }
+}
+
+/* Full-Menu-page styles */
+/* line 154, sass/layout/_main-content.scss */
+.full-menu {
+  margin-top: 50px;
+  content: "";
+  display: table;
+  max-width: 80.5em;
+  margin-left: auto;
+  margin-right: auto;
+  content: "";
+  display: table;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  /* line 154, sass/layout/_main-content.scss */
+  .full-menu {
+    width: 70em;
+  }
+}
+@media screen and (min-width: 200px) {
+  /* line 161, sass/layout/_main-content.scss */
+  .full-menu .food-picture {
+    float: left;
+    display: block;
+    margin-right: 14.28571%;
+    width: 100%;
+    margin: 50px auto 10px 7.5%;
+    width: 85%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .full-menu .food-picture:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 650px) {
+  /* line 161, sass/layout/_main-content.scss */
+  .full-menu .food-picture {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 35.48387%;
+    max-width: 400px;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .full-menu .food-picture:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 161, sass/layout/_main-content.scss */
+  .full-menu .food-picture {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 43.58974%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .full-menu .food-picture:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 161, sass/layout/_main-content.scss */
+  .full-menu .food-picture {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 48.93617%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .full-menu .food-picture:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 650px) {
+  /* line 181, sass/layout/_main-content.scss */
+  .full-menu .details {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 48.3871%;
+    margin-right: 0;
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .full-menu .details:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 181, sass/layout/_main-content.scss */
+  .full-menu .details {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 48.71795%;
+    margin: 10% auto 15%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .full-menu .details:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 181, sass/layout/_main-content.scss */
+  .full-menu .details {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 40.42553%;
+    margin: 100px 0 180px 65px;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .full-menu .details:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 200px) {
+  /* line 197, sass/layout/_main-content.scss */
+  .full-menu .food-name {
+    float: left;
+    display: block;
+    margin-right: 14.28571%;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .full-menu .food-name:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 200px) {
+  /* line 204, sass/layout/_main-content.scss */
+  .full-menu .food-ingredient {
+    float: left;
+    display: block;
+    margin-right: 14.28571%;
+    width: 100%;
+    margin-right: 0;
+    margin: 5px auto 10px;
+    font-size: 0.95em;
+    font-style: italic;
+    text-align: center;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .full-menu .food-ingredient:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 200px) {
+  /* line 227, sass/layout/_main-content.scss */
+  .full-menu .food-price {
+    float: left;
+    display: block;
+    margin-right: 14.28571%;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 0;
+    font-style: italic;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .full-menu .food-price:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 249, sass/layout/_main-content.scss */
+div#primary {
+  content: "";
+  display: table;
+  max-width: 80.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 251, sass/layout/_main-content.scss */
+div#primary .entry-content {
+  margin: 1.5em auto 0;
+  max-width: 600px;
+}
+@media screen and (min-width: 200px) {
+  /* line 251, sass/layout/_main-content.scss */
+  div#primary .entry-content {
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 258, sass/layout/_main-content.scss */
+  div#primary .content-area {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 74.19355%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  div#primary .content-area:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 263, sass/layout/_main-content.scss */
+  div#primary .widget-area {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 9.67742%;
+    margin-right: 0;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  div#primary .widget-area:last-child {
     margin-right: 0;
   }
 }
