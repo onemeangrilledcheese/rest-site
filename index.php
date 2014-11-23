@@ -12,11 +12,12 @@
  */
 
 get_header(); ?>
-        <div id="primary" class="content-area">
+<div class="inner-container">
+        <div id="primary" class="news-primary content-area">
             <main id="main" class="site-main" role="main">
 
             <?php if ( have_posts() ) : ?>
-
+            <div class="news-content">
                 <?php /* Start the Loop */ ?>
                 <?php while ( have_posts() ) : the_post();
 
@@ -35,10 +36,11 @@ get_header(); ?>
 
                 <?php get_template_part( 'content', 'none' ); ?>
 
+           </div>
             <?php endif; ?>
 
             </main><!-- #main -->
         </div><!-- #primary -->
-
+</div>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
