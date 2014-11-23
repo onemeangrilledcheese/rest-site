@@ -1510,15 +1510,51 @@ div#primary {
   }
 }
 
+/***********
+ ABOUT-PAGE
+************/
 @media screen and (min-width: 200px) {
-  /* line 252, sass/layout/_main-content.scss */
+  /* line 256, sass/layout/_main-content.scss */
+  .about-content {
+    width: 95%;
+    margin: 20px auto 0;
+    font-size: 0.89em;
+  }
+}
+@media screen and (min-width: 650px) {
+  /* line 256, sass/layout/_main-content.scss */
+  .about-content {
+    width: 90%;
+    margin: 20px auto 0;
+    font-size: .95em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 256, sass/layout/_main-content.scss */
+  .about-content {
+    width: 90%;
+    margin: 20px auto 0;
+    font-size: 1.07em;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 256, sass/layout/_main-content.scss */
+  .about-content {
+    width: 80%;
+    max-width: 840px;
+    margin: 20px auto 0;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  /* line 280, sass/layout/_main-content.scss */
   .entry-content {
     padding: 0 15px;
   }
 }
 
 @media screen and (min-width: 900px) {
-  /* line 257, sass/layout/_main-content.scss */
+  /* line 285, sass/layout/_main-content.scss */
   .content-area {
     float: left;
     display: block;
@@ -1532,7 +1568,7 @@ div#primary {
 }
 
 @media screen and (min-width: 900px) {
-  /* line 262, sass/layout/_main-content.scss */
+  /* line 290, sass/layout/_main-content.scss */
   .widget-area {
     float: left;
     display: block;
