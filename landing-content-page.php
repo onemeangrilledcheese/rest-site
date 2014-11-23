@@ -16,7 +16,7 @@
             <?php echo do_shortcode("[metaslider id=46]"); ?>
         </div>
 
-        <div class="entry-content">
+        <div class="entry-content landing-content">
             <?php the_content(); ?>
             <?php
                 wp_link_pages( array(
