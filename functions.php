@@ -70,6 +70,28 @@ function restaurant_theme_setup() {
 endif; // restaurant_theme_setup
 add_action( 'after_setup_theme', 'restaurant_theme_setup' );
 
+
+/**
+ *
+ * Replaces the excerpt "more" text by a link
+ *
+ */
+function new_excerpt_more($more) {
+       global $post;
+	return '...<a class="moretag" href="'. get_permalink($post->ID) . '">Read more &raquo;</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+/**
+ *
+ * Change excerpt length to 20 words.
+ *
+ */
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 /**
  * Register widget area.
  *

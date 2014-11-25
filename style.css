@@ -319,23 +319,43 @@ html, body {
   display: block;
 }
 
-@media screen and (min-width: 900px) {
-  /* line 18, sass/elements/_elements.scss */
-  .inner-container {
-    width: 80%;
+@media screen and (min-width: 200px) {
+  /* line 19, sass/elements/_elements.scss */
+  .news-container .inner-container {
+    width: 92%;
     margin: 50px auto 0;
-    max-width: 1040px;
+  }
+}
+@media screen and (min-width: 650px) {
+  /* line 19, sass/elements/_elements.scss */
+  .news-container .inner-container {
+    width: 87%;
+    margin: 50px auto 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 19, sass/elements/_elements.scss */
+  .news-container .inner-container {
+    width: 980px;
+    margin: 50px auto 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 19, sass/elements/_elements.scss */
+  .news-container .inner-container {
+    width: 1110px;
+    margin: 50px auto 0;
   }
 }
 
 /* creating sticky footer */
-/* line 29, sass/elements/_elements.scss */
+/* line 41, sass/elements/_elements.scss */
 .container:after {
   content: “”;
   display: block;
 }
 
-/* line 34, sass/elements/_elements.scss */
+/* line 46, sass/elements/_elements.scss */
 .entry-title,
 .entry-meta,
 .entry-content,
@@ -343,35 +363,59 @@ html, body {
   text-align: center;
 }
 
-/* line 42, sass/elements/_elements.scss */
+/* line 54, sass/elements/_elements.scss */
 .entry-content p {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 48, sass/elements/_elements.scss */
-.entry-title {
-  font-size: 3em;
-  margin-top: 10px;
-  margin-bottom: 5px;
+@media screen and (min-width: 900px) {
+  /* line 60, sass/elements/_elements.scss */
+  .entry-content {
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-/* line 54, sass/elements/_elements.scss */
+@media screen and (min-width: 200px) {
+  /* line 70, sass/elements/_elements.scss */
+  .entry-title {
+    font-size: 2.6em;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 650px) {
+  /* line 70, sass/elements/_elements.scss */
+  .entry-title {
+    font-size: 3.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 70, sass/elements/_elements.scss */
+  .entry-title {
+    font-size: 3.8em;
+  }
+}
+
+/* line 84, sass/elements/_elements.scss */
 .entry-content p {
   text-align: left;
 }
 
-/* line 58, sass/elements/_elements.scss */
+/* line 88, sass/elements/_elements.scss */
 .site-footer, .container:after {
   height: 5em;
 }
 
-/* line 62, sass/elements/_elements.scss */
+/* line 92, sass/elements/_elements.scss */
 body {
   min-width: 325px;
 }
 
-/* line 66, sass/elements/_elements.scss */
+/* line 96, sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -411,7 +455,7 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 75, sass/elements/_elements.scss */
+/* line 105, sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -419,9 +463,14 @@ img {
   /* Adhere to container width. */
 }
 
-/* line 80, sass/elements/_elements.scss */
+/* line 110, sass/elements/_elements.scss */
 figure {
   margin: 0;
+}
+
+/* line 114, sass/elements/_elements.scss */
+.moretag {
+  margin-left: 5px;
 }
 
 /* line 1, sass/elements/_tables.scss */
@@ -624,10 +673,9 @@ a:hover, a:focus, a:active {
   /* line 7, sass/navigation/_menus.scss */
   .main-navigation ul {
     width: 95%;
-    max-width: 1150px;
   }
 }
-/* line 23, sass/navigation/_menus.scss */
+/* line 22, sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -636,28 +684,28 @@ a:hover, a:focus, a:active {
   left: -999em;
   z-index: 99999;
 }
-/* line 30, sass/navigation/_menus.scss */
+/* line 29, sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 35, sass/navigation/_menus.scss */
+/* line 34, sass/navigation/_menus.scss */
 .main-navigation ul ul li {
   border: 2px solid red;
 }
-/* line 37, sass/navigation/_menus.scss */
+/* line 36, sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul {
   left: 100%;
 }
-/* line 42, sass/navigation/_menus.scss */
+/* line 41, sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
-/* line 53, sass/navigation/_menus.scss */
+/* line 52, sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul {
   left: auto;
 }
-/* line 57, sass/navigation/_menus.scss */
+/* line 56, sass/navigation/_menus.scss */
 .main-navigation li {
   float: left;
   width: 19%;
@@ -669,24 +717,24 @@ a:hover, a:focus, a:active {
   border-radius: 2px;
   color: white;
 }
-/* line 69, sass/navigation/_menus.scss */
+/* line 68, sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
-/* line 74, sass/navigation/_menus.scss */
+/* line 73, sass/navigation/_menus.scss */
 .main-navigation .current-menu-item, .main-navigation .current_page_item {
   background-color: #090c10;
   border: 3px solid white;
 }
-/* line 77, sass/navigation/_menus.scss */
+/* line 76, sass/navigation/_menus.scss */
 .main-navigation .current-menu-item a, .main-navigation .current_page_item a {
   background-color: white;
   color: black;
   height: 90%;
 }
 
-/* line 87, sass/navigation/_menus.scss */
+/* line 86, sass/navigation/_menus.scss */
 .menu-item {
   border: 3px solid rgba(255, 255, 255, 0);
   color: white;
@@ -694,17 +742,17 @@ a:hover, a:focus, a:active {
   -webkit-transition: all 0.15s linear;
   transition: all 0.15s linear;
 }
-/* line 92, sass/navigation/_menus.scss */
+/* line 91, sass/navigation/_menus.scss */
 .menu-item a {
   color: white;
 }
-/* line 96, sass/navigation/_menus.scss */
+/* line 95, sass/navigation/_menus.scss */
 .menu-item:hover, .menu-item:active, .menu-item:focus, .menu-item .active {
   border: 3px solid white;
 }
 
 /* Small menu */
-/* line 103, sass/navigation/_menus.scss */
+/* line 102, sass/navigation/_menus.scss */
 .menu-toggle {
   display: none;
   margin: 5px auto 20px;
@@ -717,17 +765,17 @@ a:hover, a:focus, a:active {
 }
 
 @media screen and (max-width: 600px) {
-  /* line 116, sass/navigation/_menus.scss */
+  /* line 115, sass/navigation/_menus.scss */
   .site-header {
     height: 150px;
   }
 
-  /* line 120, sass/navigation/_menus.scss */
+  /* line 119, sass/navigation/_menus.scss */
   .main-navigation ul {
     margin-top: 5px;
   }
 
-  /* line 123, sass/navigation/_menus.scss */
+  /* line 122, sass/navigation/_menus.scss */
   .main-navigation li {
     float: left;
     height: 45.8px;
@@ -739,42 +787,42 @@ a:hover, a:focus, a:active {
     border-radius: 0;
     background-color: #090c10;
   }
-  /* line 133, sass/navigation/_menus.scss */
+  /* line 132, sass/navigation/_menus.scss */
   .main-navigation li a {
     color: white;
     margin-top: 5px;
     margin-bottom: 5px;
   }
 
-  /* line 140, sass/navigation/_menus.scss */
+  /* line 139, sass/navigation/_menus.scss */
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
     margin-bottom: 20px;
   }
 
-  /* line 146, sass/navigation/_menus.scss */
+  /* line 145, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
   }
 
-  /* line 149, sass/navigation/_menus.scss */
+  /* line 148, sass/navigation/_menus.scss */
   #menu-primary-menu {
     margin-top: 15px;
   }
 
-  /* line 153, sass/navigation/_menus.scss */
+  /* line 152, sass/navigation/_menus.scss */
   .menu-item:hover {
     margin-top: 0;
   }
 
-  /* line 157, sass/navigation/_menus.scss */
+  /* line 156, sass/navigation/_menus.scss */
   .main-navigation .current-menu-item a,
   .main-navigation .current_page_item a {
     height: 76%;
   }
 }
-/* line 164, sass/navigation/_menus.scss */
+/* line 163, sass/navigation/_menus.scss */
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -782,7 +830,7 @@ a:hover, a:focus, a:active {
   overflow: hidden;
 }
 
-/* line 171, sass/navigation/_menus.scss */
+/* line 170, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -790,7 +838,7 @@ a:hover, a:focus, a:active {
   width: 50%;
 }
 
-/* line 178, sass/navigation/_menus.scss */
+/* line 177, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {
@@ -945,7 +993,7 @@ html {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  margin: 1.5em auto 0;
 }
 
 /* line 25, sass/site/primary/_posts-and-pages.scss */
@@ -1021,11 +1069,22 @@ div#primary {
   max-width: 80.5em;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+}
+@media screen and (min-width: 650px) {
+  /* line 19, sass/layout/_main-content.scss */
+  .landing {
+    width: 820px;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 19, sass/layout/_main-content.scss */
+  .landing {
+    width: 910px;
+  }
 }
 
 @media screen and (min-width: 200px) {
-  /* line 23, sass/layout/_main-content.scss */
+  /* line 28, sass/layout/_main-content.scss */
   .slider {
     float: left;
     display: block;
@@ -1041,15 +1100,16 @@ div#primary {
   }
 }
 @media screen and (min-width: 650px) {
-  /* line 23, sass/layout/_main-content.scss */
+  /* line 28, sass/layout/_main-content.scss */
   .slider {
     float: left;
     display: block;
-    margin-right: 3.22581%;
-    width: 48.3871%;
-    margin-left: 51.06383%;
+    margin-right: 2.12766%;
+    width: 40.42553%;
+    margin-left: 48.93617%;
     margin-right: 0;
     margin-top: 50px;
+    max-width: 330px;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .slider:last-child {
@@ -1057,23 +1117,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 23, sass/layout/_main-content.scss */
-  .slider {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 48.71795%;
-    margin-left: 51.06383%;
-    margin-right: 0;
-    margin-top: 50px;
-  }
-  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
-  .slider:last-child {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 23, sass/layout/_main-content.scss */
+  /* line 28, sass/layout/_main-content.scss */
   .slider {
     float: left;
     display: block;
@@ -1082,6 +1126,24 @@ div#primary {
     margin-left: 51.06383%;
     margin-right: 0;
     margin-top: 50px;
+    max-width: 360px;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  .slider:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 28, sass/layout/_main-content.scss */
+  .slider {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 48.93617%;
+    margin-left: 51.06383%;
+    margin-right: 0;
+    margin-top: 50px;
+    max-width: 360px;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .slider:last-child {
@@ -1089,17 +1151,17 @@ div#primary {
   }
 }
 
-/* line 49, sass/layout/_main-content.scss */
+/* line 57, sass/layout/_main-content.scss */
 .landing-content {
   text-align: left;
 }
 @media screen and (min-width: 200px) {
-  /* line 49, sass/layout/_main-content.scss */
+  /* line 57, sass/layout/_main-content.scss */
   .landing-content {
     float: left;
     display: block;
-    margin-right: 14.28571%;
-    width: 100%;
+    margin-right: 2.12766%;
+    width: 14.89362%;
     margin: 50px 0 0 8px;
     font-size: 0.95em;
     width: 95%;
@@ -1110,16 +1172,17 @@ div#primary {
   }
 }
 @media screen and (min-width: 650px) {
-  /* line 49, sass/layout/_main-content.scss */
+  /* line 57, sass/layout/_main-content.scss */
   .landing-content {
     float: left;
     display: block;
-    margin-right: 3.22581%;
-    width: 48.3871%;
+    margin-right: 2.12766%;
+    width: 44.68085%;
     padding: 0 20px 0 0;
-    margin-left: -100%;
-    margin-top: 50px;
+    margin-left: -82.97872%;
+    margin-top: 45px;
     margin-right: 10px;
+    max-width: 325px;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing-content:last-child {
@@ -1127,15 +1190,15 @@ div#primary {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 49, sass/layout/_main-content.scss */
+  /* line 57, sass/layout/_main-content.scss */
   .landing-content {
     float: left;
     display: block;
-    margin-right: 2.5641%;
-    width: 48.71795%;
-    margin-left: -97.87234%;
-    margin-top: 50px;
+    margin-right: 2.12766%;
+    width: 44.68085%;
+    margin-left: -85.10638%;
     font-size: 1em;
+    max-width: 400px;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing-content:last-child {
@@ -1143,16 +1206,18 @@ div#primary {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 49, sass/layout/_main-content.scss */
+  /* line 57, sass/layout/_main-content.scss */
   .landing-content {
     float: left;
     display: block;
     margin-right: 2.12766%;
     width: 48.93617%;
-    margin-left: -97.87234%;
+    margin-left: -89.3617%;
     padding: 0 55px 0 0;
     margin-top: 45px;
     font-size: 1.1em;
+    max-width: 445px;
+    padding-right: 40px;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .landing-content:last-child {
@@ -1161,7 +1226,7 @@ div#primary {
 }
 
 /* Daily-Specials-page styles */
-/* line 82, sass/layout/_main-content.scss */
+/* line 93, sass/layout/_main-content.scss */
 .daily-specials {
   margin-top: 50px;
   content: "";
@@ -1174,14 +1239,14 @@ div#primary {
   display: block;
 }
 @media screen and (min-width: 1200px) {
-  /* line 82, sass/layout/_main-content.scss */
+  /* line 93, sass/layout/_main-content.scss */
   .daily-specials {
     width: 70em;
   }
 }
 
 @media screen and (min-width: 200px) {
-  /* line 91, sass/layout/_main-content.scss */
+  /* line 102, sass/layout/_main-content.scss */
   .food-picture {
     float: left;
     display: block;
@@ -1196,7 +1261,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 650px) {
-  /* line 91, sass/layout/_main-content.scss */
+  /* line 102, sass/layout/_main-content.scss */
   .food-picture {
     float: left;
     display: block;
@@ -1210,7 +1275,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 91, sass/layout/_main-content.scss */
+  /* line 102, sass/layout/_main-content.scss */
   .food-picture {
     float: left;
     display: block;
@@ -1225,7 +1290,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 91, sass/layout/_main-content.scss */
+  /* line 102, sass/layout/_main-content.scss */
   .food-picture {
     float: left;
     display: block;
@@ -1240,7 +1305,7 @@ div#primary {
 }
 
 @media screen and (min-width: 650px) {
-  /* line 112, sass/layout/_main-content.scss */
+  /* line 123, sass/layout/_main-content.scss */
   .details {
     float: left;
     display: block;
@@ -1255,7 +1320,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 112, sass/layout/_main-content.scss */
+  /* line 123, sass/layout/_main-content.scss */
   .details {
     float: left;
     display: block;
@@ -1269,7 +1334,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 112, sass/layout/_main-content.scss */
+  /* line 123, sass/layout/_main-content.scss */
   .details {
     float: left;
     display: block;
@@ -1284,7 +1349,7 @@ div#primary {
 }
 
 @media screen and (min-width: 200px) {
-  /* line 127, sass/layout/_main-content.scss */
+  /* line 138, sass/layout/_main-content.scss */
   .food-name {
     float: left;
     display: block;
@@ -1300,7 +1365,7 @@ div#primary {
 }
 
 @media screen and (min-width: 200px) {
-  /* line 134, sass/layout/_main-content.scss */
+  /* line 145, sass/layout/_main-content.scss */
   .food-ingredient {
     float: left;
     display: block;
@@ -1319,7 +1384,7 @@ div#primary {
 }
 
 @media screen and (min-width: 200px) {
-  /* line 144, sass/layout/_main-content.scss */
+  /* line 155, sass/layout/_main-content.scss */
   .food-price {
     float: left;
     display: block;
@@ -1337,7 +1402,7 @@ div#primary {
 }
 
 /* Full-Menu-page styles */
-/* line 157, sass/layout/_main-content.scss */
+/* line 168, sass/layout/_main-content.scss */
 .full-menu {
   margin-top: 50px;
   content: "";
@@ -1350,13 +1415,13 @@ div#primary {
   display: block;
 }
 @media screen and (min-width: 1200px) {
-  /* line 157, sass/layout/_main-content.scss */
+  /* line 168, sass/layout/_main-content.scss */
   .full-menu {
     width: 70em;
   }
 }
 @media screen and (min-width: 200px) {
-  /* line 164, sass/layout/_main-content.scss */
+  /* line 175, sass/layout/_main-content.scss */
   .full-menu .food-picture {
     float: left;
     display: block;
@@ -1371,7 +1436,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 650px) {
-  /* line 164, sass/layout/_main-content.scss */
+  /* line 175, sass/layout/_main-content.scss */
   .full-menu .food-picture {
     float: left;
     display: block;
@@ -1385,7 +1450,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 164, sass/layout/_main-content.scss */
+  /* line 175, sass/layout/_main-content.scss */
   .full-menu .food-picture {
     float: left;
     display: block;
@@ -1400,7 +1465,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 164, sass/layout/_main-content.scss */
+  /* line 175, sass/layout/_main-content.scss */
   .full-menu .food-picture {
     float: left;
     display: block;
@@ -1413,7 +1478,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 650px) {
-  /* line 184, sass/layout/_main-content.scss */
+  /* line 195, sass/layout/_main-content.scss */
   .full-menu .details {
     float: left;
     display: block;
@@ -1429,7 +1494,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 184, sass/layout/_main-content.scss */
+  /* line 195, sass/layout/_main-content.scss */
   .full-menu .details {
     float: left;
     display: block;
@@ -1443,7 +1508,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 184, sass/layout/_main-content.scss */
+  /* line 195, sass/layout/_main-content.scss */
   .full-menu .details {
     float: left;
     display: block;
@@ -1457,7 +1522,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 200px) {
-  /* line 200, sass/layout/_main-content.scss */
+  /* line 211, sass/layout/_main-content.scss */
   .full-menu .food-name {
     float: left;
     display: block;
@@ -1472,7 +1537,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 200px) {
-  /* line 207, sass/layout/_main-content.scss */
+  /* line 218, sass/layout/_main-content.scss */
   .full-menu .food-ingredient {
     float: left;
     display: block;
@@ -1490,7 +1555,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 200px) {
-  /* line 230, sass/layout/_main-content.scss */
+  /* line 241, sass/layout/_main-content.scss */
   .full-menu .food-price {
     float: left;
     display: block;
@@ -1511,7 +1576,7 @@ div#primary {
  ABOUT-PAGE
 ************/
 @media screen and (min-width: 200px) {
-  /* line 256, sass/layout/_main-content.scss */
+  /* line 267, sass/layout/_main-content.scss */
   .about-content {
     width: 95%;
     margin: 20px auto 0;
@@ -1519,7 +1584,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 650px) {
-  /* line 256, sass/layout/_main-content.scss */
+  /* line 267, sass/layout/_main-content.scss */
   .about-content {
     width: 90%;
     margin: 20px auto 0;
@@ -1527,7 +1592,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 256, sass/layout/_main-content.scss */
+  /* line 267, sass/layout/_main-content.scss */
   .about-content {
     width: 90%;
     margin: 20px auto 0;
@@ -1535,7 +1600,7 @@ div#primary {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 256, sass/layout/_main-content.scss */
+  /* line 267, sass/layout/_main-content.scss */
   .about-content {
     width: 80%;
     max-width: 840px;
@@ -1543,68 +1608,85 @@ div#primary {
   }
 }
 
-/***********
+/**********
  NEWS-PAGE
-************/
+***********/
 @media screen and (min-width: 900px) {
-  /* line 285, sass/layout/_main-content.scss */
+  /* line 296, sass/layout/_main-content.scss */
+  div#primary.news-primary {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 57.44681%;
+  }
+  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
+  div#primary.news-primary:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 296, sass/layout/_main-content.scss */
   div#primary.news-primary {
     width: 80%;
   }
 }
+@media screen and (min-width: 650px) {
+  /* line 308, sass/layout/_main-content.scss */
+  div#primary.news-primary .entry-content {
+    max-width: 500px;
+  }
+}
 @media screen and (min-width: 1200px) {
-  /* line 285, sass/layout/_main-content.scss */
-  div#primary.news-primary {
-    width: 80%;
+  /* line 308, sass/layout/_main-content.scss */
+  div#primary.news-primary .entry-content {
+    max-width: 550px;
   }
 }
 
 @media screen and (min-width: 200px) {
-  /* line 299, sass/layout/_main-content.scss */
+  /* line 318, sass/layout/_main-content.scss */
   .news-content {
     margin: 20px auto 0;
     font-size: 0.89em;
   }
 }
 @media screen and (min-width: 650px) {
-  /* line 299, sass/layout/_main-content.scss */
+  /* line 318, sass/layout/_main-content.scss */
   .news-content {
     font-size: .95em;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 299, sass/layout/_main-content.scss */
+  /* line 318, sass/layout/_main-content.scss */
   .news-content {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 74.46809%;
-    font-size: 1.07em;
-    min-width: 550px;
-  }
-  /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
-  .news-content:last-child {
-    margin-right: 0;
+    width: 100%;
+    font-size: 1.03em;
+    padding-left: 55px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 299, sass/layout/_main-content.scss */
+  /* line 318, sass/layout/_main-content.scss */
   .news-content {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 65.95745%;
+    width: 82.97872%;
     width: 100%;
     max-width: 750px;
+    padding-left: 0;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .news-content:last-child {
     margin-right: 0;
   }
 }
+/* line 337, sass/layout/_main-content.scss */
+.news-content .hentry {
+  margin-bottom: 50px;
+}
 
 @media screen and (min-width: 650px) {
-  /* line 319, sass/layout/_main-content.scss */
+  /* line 342, sass/layout/_main-content.scss */
   .widget-area {
     float: left;
     display: block;
@@ -1617,12 +1699,12 @@ div#primary {
   .widget-area:last-child {
     margin-right: 0;
   }
-  /* line 324, sass/layout/_main-content.scss */
+  /* line 347, sass/layout/_main-content.scss */
   .widget-area .widget-title {
     width: 100%;
     float: left;
   }
-  /* line 328, sass/layout/_main-content.scss */
+  /* line 351, sass/layout/_main-content.scss */
   .widget-area ul {
     width: 33%;
     display: inline-block;
@@ -1631,48 +1713,51 @@ div#primary {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 319, sass/layout/_main-content.scss */
+  /* line 342, sass/layout/_main-content.scss */
   .widget-area {
     float: left;
     display: block;
     margin-right: 2.12766%;
     width: 23.40426%;
     margin-right: 0;
+    float: right;
     margin-top: 170px;
-    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .widget-area:last-child {
     margin-right: 0;
   }
-  /* line 340, sass/layout/_main-content.scss */
+  /* line 365, sass/layout/_main-content.scss */
   .widget-area .widget-title {
     width: auto;
     float: none;
     text-align: left;
   }
-  /* line 345, sass/layout/_main-content.scss */
+  /* line 370, sass/layout/_main-content.scss */
   .widget-area ul {
     width: auto;
     display: block;
   }
-  /* line 348, sass/layout/_main-content.scss */
+  /* line 373, sass/layout/_main-content.scss */
   .widget-area ul li {
     text-align: left;
     padding-left: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 319, sass/layout/_main-content.scss */
+  /* line 342, sass/layout/_main-content.scss */
   .widget-area {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 23.40426%;
+    width: 14.89362%;
+    margin-left: -8.51064%;
     margin-right: 0;
     margin-top: 170px;
-    padding: 0 0 0 40px;
-    max-width: 300px;
+    padding: 0 0 0 60px;
+    width: 220px;
   }
   /* line 38, /Users/ChrisAir/vagrant-local/www/rest-site/htdocs/wp-content/themes/restaurant-theme/node_modules/node-neat/assets/stylesheets/grid/_span-columns.scss */
   .widget-area:last-child {
@@ -1680,15 +1765,8 @@ div#primary {
   }
 }
 
-@media screen and (min-width: 200px) {
-  /* line 364, sass/layout/_main-content.scss */
-  .entry-content {
-    padding: 0 15px;
-  }
-}
-
 @media screen and (min-width: 900px) {
-  /* line 369, sass/layout/_main-content.scss */
+  /* line 394, sass/layout/_main-content.scss */
   .content-area {
     float: left;
     display: block;
