@@ -1,5 +1,7 @@
 'use strict';
 module.exports = function(grunt) {
+    // display the elapsed execution time of grunt tasks
+    require('time-grunt')(grunt);
     // load all grunt tasks matching the `grunt-*` pattern
     require('load-grunt-tasks')(grunt);
 
@@ -8,7 +10,7 @@ module.exports = function(grunt) {
         // watch for changes and trigger sass, jshint, uglify and livereload
         watch: {
             options: {
-                    livereload: true,
+                livereload: true,
             },
             sass: {
                 files: ['sass/**/*.{scss,sass}'],
@@ -30,7 +32,7 @@ module.exports = function(grunt) {
                 options: {
                     style: 'expanded',
                     lineNumbers: true,
-                    loadPath: require('node-neat').includePaths
+                    includePaths: require('node-neat').includePaths
                 },
                 files: {
                     'style.css': 'sass/style.scss',
@@ -51,18 +53,19 @@ module.exports = function(grunt) {
                 dest: ''
             },
         },
-
+        // jshint
         jshint: {
             options: {
                 jshintrc: '.jshintrc',
-                "force": true
+                "force": true,
+                reporter: require('jshint-stylish')
             },
             all: [
                 'Gruntfile.js',
                 'js/*.js'
             ]
         },
-
+        // uglify
         uglify: {
             main: {
                 options: {
@@ -77,10 +80,24 @@ module.exports = function(grunt) {
                 }
             }
         },
-
+        // concurrent
+        concurrent: {
+            target1: {
+                tasks: ['sass', 'jshint']
+            },
+            target2: {
+                tasks: ['autoprefixer']
+            },
+            target3: {
+                tasks: ['watch'],
+                options: {
+                    logConcurrentOutput: true
+                }
+            }
+        }
     });
 
     // register task
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'watch']);
+    grunt.registerTask('default', ['concurrent:target1', 'concurrent:target2', 'concurrent:target3' ]);
     grunt.registerTask('dev', ['sass', 'autoprefixer', 'cssmin', 'uglify', 'watch']);
 };

@@ -112,7 +112,6 @@ function loadGravatars() {
 */
 jQuery(document).ready(function ($) {
 
-
     /*
      * Nav Menu toggle
      *
