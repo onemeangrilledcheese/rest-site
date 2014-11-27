@@ -723,10 +723,6 @@ html {
 div#primary {
   width: 100%; }
 
-.row {
-  height: 100% !important;
-  width: 100%; }
-
 /*************
  LANDING PAGE
 **************/
@@ -858,7 +854,17 @@ div#primary {
   display: block; }
   @media screen and (min-width: 1200px)  {
     .daily-specials {
-      width: 70em; } }
+      width: 99%;
+      max-width: 1250px; } }
+
+@media screen and (min-width: 1200px)  {
+  .daily-row {
+    width: 32%;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    float: inherit;
+    vertical-align: top; } }
 
 @media screen and (min-width: 200px)  {
   .food-picture {
@@ -883,10 +889,11 @@ div#primary {
   .food-picture {
     float: left;
     display: block;
-    margin-right: 2.5641025641%;
-    width: 38.4615384615%;
+    margin-right: 2.1276595745%;
+    width: 40.4255319149%;
     margin-top: 35px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin: 50px auto 10px 8.5%; }
     .food-picture:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 1200px)  {
@@ -894,8 +901,10 @@ div#primary {
     float: left;
     display: block;
     margin-right: 2.1276595745%;
-    width: 48.9361702128%;
-    max-width: 47%; }
+    width: 23.4042553191%;
+    width: 85%;
+    margin: 35px auto 20px 25px;
+    float: inherit; }
     .food-picture:last-child {
       margin-right: 0; } }
 
@@ -913,20 +922,15 @@ div#primary {
   .details {
     float: left;
     display: block;
-    margin-right: 2.5641025641%;
-    width: 48.7179487179%;
-    margin: 8% auto 15%; }
+    margin-right: 2.1276595745%;
+    width: 40.4255319149%;
+    margin: 14% auto 12%; }
     .details:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 1200px)  {
   .details {
-    float: left;
-    display: block;
-    margin-right: 2.1276595745%;
-    width: 40.4255319149%;
-    margin: 100px 0 180px 65px; }
-    .details:last-child {
-      margin-right: 0; } }
+    width: 98%;
+    margin: 5px 0 50px; } }
 
 @media screen and (min-width: 200px)  {
   .food-name {

@@ -14,8 +14,9 @@ get_header(); ?>
                 <?php
                 // check if the repeater field has rows of data, then loop through the rows of data
                 if( have_rows('create_new_daily_special') ):
-                    while ( have_rows('create_new_daily_special') ) : the_row();
-
+                    while ( have_rows('create_new_daily_special') ) : the_row(); ?>
+                       <div class="daily-row">
+                       <?php
                         $imageArray = get_sub_field('food_item_picture'); // Array returned by Advanced Custom Fields, allows to pull from in the next few variables
                         $imageAlt = $imageArray['alt']; // Grab, from the array, the 'alt'
                         $imageURL = $imageArray['url']; // Grab the full size version
@@ -39,6 +40,7 @@ get_header(); ?>
                                 <p class="food-ingredient"><?php the_sub_field('food_item_ingredients'); ?></p>
                                 <p class="food-price"><?php the_sub_field('food_item_price'); ?></p>
                             </div>
+                        </div> <!-- end .row -->
                     <?php
                     endwhile;
                 else : // no rows found

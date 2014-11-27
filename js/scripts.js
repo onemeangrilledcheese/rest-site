@@ -131,7 +131,7 @@ jQuery(document).ready(function ($) {
      * Show active nav item when clicked
      */
 
-    $(".food-name").fitText(1.2, { minFontSize: '35px', maxFontSize: '50px' });
+    $(".food-name").fitText(1.2, { minFontSize: '25px', maxFontSize: '40px' });
 
     /*
      * Let's fire off the gravatar function
