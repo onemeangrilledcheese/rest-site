@@ -255,6 +255,9 @@ html, body {
   min-height: 100%;
   display: block; }
 
+.inner-container {
+  margin-top: 30px; }
+
 @media screen and (min-width: 200px)  {
   .news-container .inner-container {
     width: 92%;
@@ -453,10 +456,22 @@ a {
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  /* end media($tablet) */
+  /* end media($desktop) */ }
+  @media screen and (min-width: 900px)  {
+    .main-navigation {
+      float: none;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto; } }
+  @media screen and (min-width: 1200px)  {
+    .main-navigation {
+      clear: none;
+      display: block;
+      float: left;
+      width: 70%;
+      max-width: 900px;
+      margin: 10px 0; } }
   .main-navigation ul {
     list-style: none;
     margin: 0 auto;
@@ -468,7 +483,7 @@ a {
     @media screen and (min-width: 900px)  {
       .main-navigation ul {
         width: 95%;
-        max-width: 950px; } }
+        max-width: 960px; } }
     @media screen and (min-width: 1200px)  {
       .main-navigation ul {
         width: 95%; } }
@@ -500,6 +515,18 @@ a {
     background-color: #090c10;
     border-radius: 2px;
     color: white; }
+    @media screen and (min-width: 650px)  {
+      .main-navigation li {
+        height: auto;
+        line-height: 35px; } }
+    @media screen and (min-width: 900px)  {
+      .main-navigation li {
+        height: auto;
+        line-height: 40px; } }
+    @media screen and (min-width: 1200px)  {
+      .main-navigation li {
+        line-height: 60px;
+        margin-top: 10px; } }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -512,15 +539,48 @@ a {
       height: 90%; }
 
 .menu-item {
+  display: inline-block;
   border: 3px solid rgba(255, 255, 255, 0);
   color: white;
-  margin-top: -3px;
-  -webkit-transition: all 0.15s linear;
-  transition: all 0.15s linear; }
+  margin-top: -3px; }
+  @media screen and (min-width: 900px)  {
+    .menu-item {
+      line-height: 40px; } }
+  @media screen and (min-width: 1200px)  {
+    .menu-item {
+      line-height: 5em; } }
   .menu-item a {
     color: white; }
-  .menu-item:hover, .menu-item:active, .menu-item:focus, .menu-item .active {
-    border: 3px solid white; }
+  @media screen and (min-width: 1200px)  {
+    .menu-item:after {
+      content: '';
+      display: block;
+      height: 3px;
+      margin-top: -15px;
+      margin-left: 22px;
+      width: 0;
+      background: transparent;
+      transition: width 0.3s ease, background-color 0.3s ease; }
+
+    .menu-item:hover:after {
+      padding: 0 14px;
+      width: 70%;
+      background: white; }
+ }
+
+@media screen and (min-width: 1200px)  {
+  .current-menu-item:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease; }
+
+  .current-menu-item:hover:after {
+    background: black; }
+ }
 
 /* Small menu */
 .menu-toggle {
@@ -706,15 +766,30 @@ html {
     width: 100%;
     margin: 0 auto;
     height: 120px; }
+    @media screen and (min-width: 650px)  {
+      .site-header {
+        height: 140px; } }
+    @media screen and (min-width: 1200px)  {
+      .site-header {
+        height: 100px; } }
 
   .site-title, .site-description {
     margin-left: 2%; }
 
   .site-title {
     font-size: 3em;
+    line-height: 70px;
     margin-left: 10px;
     text-align: center; }
+    .site-title a {
+      text-decoration: none; }
  }
+
+@media screen and (min-width: 1200px)  {
+  .site-branding {
+    width: 25%;
+    margin: 10px 0;
+    float: left; } }
 
 .site-content {
   display: block;
@@ -746,8 +821,8 @@ div#primary {
     margin-right: 14.2857142857%;
     width: 100%;
     margin-right: 0;
-    width: 95%;
-    margin: 50px auto 0 3%; }
+    width: 82%;
+    margin: 50px auto 0 9%; }
     .slider:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 650px)  {
@@ -794,10 +869,9 @@ div#primary {
       float: left;
       display: block;
       margin-right: 2.1276595745%;
-      width: 14.8936170213%;
-      margin: 50px 0 0 8px;
-      font-size: 0.95em;
-      width: 95%; }
+      width: 91.4893617021%;
+      margin-left: 4.2553191489%;
+      font-size: 0.95em; }
       .landing-content:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 650px)  {
@@ -1222,6 +1296,41 @@ div#primary {
     width: 74.1935483871%; }
     .content-area:last-child {
       margin-right: 0; } }
+
+/*************
+ CONTACT-PAGE
+**************/
+@media screen and (min-width: 1200px)  {
+  .contact-content {
+    width: 90%;
+    max-width: 900px; } }
+
+.contact-info {
+  margin: 20px 0 60px; }
+
+hr.divider {
+  border: 0;
+  height: 1px;
+  width: 90%;
+  margin: 50px auto 70px;
+  background: #333;
+  background-image: -webkit-linear-gradient(right, #ccc, #938282, #ccc);
+  background-image: -o-linear-gradient(right, #ccc, #938282, #ccc);
+  background-image: linear, to left, #ccc, #938282, #ccc; }
+
+@media screen and (min-width: 200px)  {
+  .google-map {
+    width: 90%;
+    margin: 0 auto !important; } }
+@media screen and (min-width: 650px)  {
+  .google-map {
+    width: 75%; } }
+@media screen and (min-width: 900px)  {
+  .google-map {
+    width: 85%; } }
+@media screen and (min-width: 1200px)  {
+  .google-map {
+    width: 90%; } }
 
 .site-footer {
   content: "";
