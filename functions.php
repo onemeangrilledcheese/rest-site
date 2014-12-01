@@ -154,3 +154,14 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+/**
+ * Load Google Fonts
+ */
+function load_fonts() {
+            wp_register_style('et-googleFonts', 'http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,700italic|Rock+Salt');
+            wp_enqueue_style( 'et-googleFonts');
+        }
+    add_action('wp_print_styles', 'load_fonts');
+
