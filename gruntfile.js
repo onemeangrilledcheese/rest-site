@@ -9,20 +9,10 @@ module.exports = function(grunt) {
 
         // watch for changes and trigger sass, jshint, uglify and livereload
         watch: {
+            files: ['sass/**/*.{scss,sass}', 'style.css', 'js/*.js'],
+            tasks: ['sass', 'jshint', 'autoprefixer', 'browserSync'],
             options: {
                 livereload: true,
-            },
-            sass: {
-                files: ['sass/**/*.{scss,sass}'],
-                tasks: ['sass']
-            },
-            css: {
-                files: ['style.css'],
-                tasks: []
-              },
-            js: {
-                files: 'js/*.js',
-                tasks: ['jshint', 'uglify']
             }
         },
 
@@ -30,12 +20,12 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 options: {
-                    style: 'expanded',
+                    outputStyle: 'compress',
                     lineNumbers: true,
                     includePaths: require('node-neat').includePaths
                 },
                 files: {
-                    'style.css': 'sass/style.scss',
+                    'style.css': 'sass/style.scss'
                 }
             }
         },
@@ -52,6 +42,18 @@ module.exports = function(grunt) {
                 src: '*.css',
                 dest: ''
             },
+        },
+        // runs across multiple devices (runs concurrently with watch task)
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src : ['style.css', '*.php']
+                },
+                options: {
+                    proxy: "rest-site.dev",
+                    watchTask : true // < VERY important
+                }
+            }
         },
         // jshint
         jshint: {
@@ -82,22 +84,13 @@ module.exports = function(grunt) {
         },
         // concurrent
         concurrent: {
-            target1: {
-                tasks: ['sass', 'jshint']
-            },
-            target2: {
-                tasks: ['autoprefixer']
-            },
-            target3: {
-                tasks: ['watch'],
-                options: {
-                    logConcurrentOutput: true
-                }
+            target: {
+                tasks: ['autoprefixer', 'jshint', 'sass', 'uglify']
             }
         }
     });
 
     // register task
-    grunt.registerTask('default', ['concurrent:target1', 'concurrent:target2', 'concurrent:target3' ]);
+    grunt.registerTask('default', ['concurrent:target', 'browserSync', 'watch' ]);
     grunt.registerTask('dev', ['sass', 'autoprefixer', 'cssmin', 'uglify', 'watch']);
 };

@@ -1,4 +1,4 @@
-/*
+/*!
 Theme Name: Restaurant Theme
 Theme URI: http://underscores.me/
 Author: Automattic
@@ -44,8 +44,6 @@ and Blueprint http://www.blueprintcss.org/
 	12.2 Galleries
 --------------------------------------------------------------*/
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body:before {
@@ -53,9 +51,6 @@ body:before {
   display: inline-block;
   background-image: deprecated-webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
   background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
   height: 100%;
   left: 0;
@@ -71,33 +66,21 @@ body:before {
     body:before {
       background-image: deprecated-webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
       background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
       background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%); } }
   @media screen and (min-width: 650px)  {
     body:before {
       background-image: deprecated-webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
       background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
       background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%); } }
   @media screen and (min-width: 900px)  {
     body:before {
       background-image: deprecated-webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
       background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
       background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%); } }
   @media screen and (min-width: 1200px)  {
     body:before {
       background-image: deprecated-webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
       background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
-      background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%);
       background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, #EEE 0, #EEE 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #EEE 8.51064%, #EEE 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #EEE 17.02128%, #EEE 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #EEE 25.53191%, #EEE 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #EEE 34.04255%, #EEE 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #EEE 42.55319%, #EEE 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #EEE 51.06383%, #EEE 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #EEE 59.57447%, #EEE 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #EEE 68.08511%, #EEE 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #EEE 76.59574%, #EEE 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #EEE 85.10638%, #EEE 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #EEE 93.61702%, #EEE 100%, rgba(0, 0, 0, 0) 100%); } }
 
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
@@ -130,8 +113,6 @@ html {
 
 *, *:before, *:after {
   /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -301,7 +282,7 @@ html, body {
 
 @media screen and (min-width: 200px)  {
   .entry-title {
-    font-size: 2.6em;
+    font-size: 2.8em;
     margin-top: 10px;
     margin-bottom: 0; } }
 @media screen and (min-width: 650px)  {
@@ -410,9 +391,7 @@ input[type="checkbox"], input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
-  -webkit-box-sizing: content-box;
   /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
-  -moz-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-decoration {
@@ -429,7 +408,6 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   border: 1px solid #ccc;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  -webkit-border-radius: 3px;
   border-radius: 3px; }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus {
@@ -516,10 +494,10 @@ a {
     float: left;
     width: 19%;
     height: 35px;
-    margin: 0 2px;
+    margin: 5px 2px;
     position: relative;
     text-align: center;
-    background-color: #2C3E51;
+    background-color: #1A3047;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 3px;
@@ -565,7 +543,10 @@ a {
       line-height: 5em;
       padding-bottom: 13px; } }
   .menu-item a {
-    color: white; }
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.047em; }
   @media screen and (min-width: 650px)  {
     .menu-item:after {
       content: '';
@@ -575,6 +556,7 @@ a {
       margin-left: 22px;
       width: 0;
       background: transparent;
+      -webkit-transition: width 0.3s ease, background-color 0.3s ease;
       transition: width 0.3s ease, background-color 0.3s ease; }
 
     .menu-item:hover:after {
@@ -590,6 +572,7 @@ a {
       margin-left: 22px;
       width: 0;
       background: transparent;
+      -webkit-transition: width 0.3s ease, background-color 0.3s ease;
       transition: width 0.3s ease, background-color 0.3s ease; }
 
     .menu-item:hover:after {
@@ -606,6 +589,7 @@ a {
       margin-left: 22px;
       width: 0;
       background: transparent;
+      -webkit-transition: width 0.3s ease, background-color 0.3s ease;
       transition: width 0.3s ease, background-color 0.3s ease; }
 
     .menu-item:hover:after {
@@ -624,6 +608,7 @@ a {
       height: 2px;
       width: 0;
       background: transparent;
+      -webkit-transition: width 0.3s ease, background-color 0.3s ease;
       transition: width 0.3s ease, background-color 0.3s ease; }
 
     .current-menu-item:hover:after {
@@ -637,6 +622,7 @@ a {
       height: 2px;
       width: 0;
       background: transparent;
+      -webkit-transition: width 0.3s ease, background-color 0.3s ease;
       transition: width 0.3s ease, background-color 0.3s ease; }
 
     .current-menu-item:hover:after {
@@ -650,6 +636,7 @@ a {
       height: 3px;
       width: 0;
       background: transparent;
+      -webkit-transition: width 0.3s ease, background-color 0.3s ease;
       transition: width 0.3s ease, background-color 0.3s ease; }
 
     .current-menu-item:hover:after {
@@ -662,7 +649,7 @@ a {
   margin: 5px auto 20px;
   height: 50px;
   width: 60%;
-  background-color: #1B242D;
+  background-color: #1A3047;
   color: white;
   border: 3px solid white;
   border-radius: 2px; }
@@ -733,7 +720,6 @@ a {
     background-color: #f1f1f1;
     background-clip: padding-box;
     /* stops bg color from leaking outside the border: */
-    -webkit-border-radius: 3px;
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
@@ -821,17 +807,20 @@ html {
   margin: 0 0 1.5em; }
 
 .site-header {
-  -webkit-box-shadow: 0px 16px 96px -2px rgba(0, 0, 0, 0.64);
-  -moz-box-shadow: 0px 16px 96px -2px rgba(0, 0, 0, 0.64);
   box-shadow: 0px 16px 96px -2px rgba(0, 0, 0, 0.64);
   background: black;
-  background-color: #282828;
-  background-image: -webkit-linear-gradient(#282828, #191919);
-  background-image: linear-gradient(#282828, #191919); }
+  background-color: #272727;
+  background-image: -webkit-linear-gradient(#272727, #020202);
+  background-image: linear-gradient(#272727, #020202); }
 
 .site-title {
-  font-family: 'Rock Salt', cursive;
-  text-shadow: -2px 1px 13px #2C3E51; }
+  font-family: 'Pacifico', cursive; }
+  .site-title a {
+    text-decoration: none;
+    color: #FFF;
+    text-shadow: 0.5px 1.3px 0 #8E8E8E, 0.3px 0.5px 0 #888888, 0.1px 0.5px 0 #8B8B8C, 0.5px 1.5px 0 #817E7E, 0 3.1px 0 #aaa, 0 4.6px 7.1px #242c54, 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.95), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px #242424, 0 20px 20px rgba(0, 0, 0, 0.15); }
+    .site-title a:hover {
+      color: #DFDFDF; }
 
 @media screen and (max-width: 650px) {
   .site-header {
@@ -844,11 +833,6 @@ html {
     font-size: 3em;
     margin-left: 10px;
     text-align: center; }
-    .site-title a {
-      text-decoration: none;
-      color: white; }
-      .site-title a:hover {
-        color: #cccccc; }
  }
 
 @media screen and (min-width: 651px) {
@@ -867,15 +851,10 @@ html {
     margin-left: 2%; }
 
   .site-title {
-    font-size: 3em;
+    font-size: 3.5em;
     line-height: 70px;
     margin-left: 10px;
     text-align: center; }
-    .site-title a {
-      text-decoration: none;
-      color: white; }
-      .site-title a:hover {
-        color: #cccccc; }
  }
 
 @media screen and (min-width: 1200px)  {
@@ -1398,22 +1377,29 @@ div#primary {
     width: 90%;
     max-width: 900px; } }
 
-.contact-info {
-  margin: 20px 0 60px; }
+@media screen and (min-width: 200px)  {
+  .contact-info {
+    margin: 20px 0 40px; } }
+@media screen and (min-width: 900px)  {
+  .contact-info {
+    margin: 20px 0 60px; } }
 
-hr.divider {
-  border: 0;
-  height: 1px;
-  width: 90%;
-  margin: 50px auto 70px;
-  background: #333;
-  background-image: -webkit-linear-gradient(right, #ccc, #938282, #ccc);
-  background-image: -o-linear-gradient(right, #ccc, #938282, #ccc);
-  background-image: linear, to left, #ccc, #938282, #ccc; }
+@media screen and (min-width: 200px)  {
+  hr.divider {
+    border: 0;
+    height: 1px;
+    width: 90%;
+    margin: 20px auto 40px;
+    background: #333;
+    background-image: -webkit-linear-gradient(right, #ccc, #938282, #ccc);
+    background-image: linear, to left, #ccc, #938282, #ccc; } }
+@media screen and (min-width: 650px)  {
+  hr.divider {
+    margin: 50px auto 70px; } }
 
 @media screen and (min-width: 200px)  {
   .google-map {
-    width: 90%;
+    width: 85%;
     margin: 0 auto !important; } }
 @media screen and (min-width: 650px)  {
   .google-map {
