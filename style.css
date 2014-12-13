@@ -304,10 +304,11 @@ body {
   min-width: 325px; }
 
 hr {
-  background-color: #ccc;
+  background-color: #7B7C7F;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em; }
+  margin: 1.5em auto;
+  width: 90%; }
 
 ul, ol {
   margin: 0 0 1.5em 3em; }
@@ -988,23 +989,143 @@ div#primary {
 /********************
  DAILY-SPECIALS PAGE
 ********************/
+/**
+ * hover styles, pulled from sadie example - see http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/
+ */
+.daily-specials figure {
+  position: relative;
+  float: none;
+  overflow: hidden;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer; }
+
+.daily-specials figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8; }
+
+.daily-specials figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.daily-specials figure figcaption::before, .daily-specials figure figcaption::after {
+  pointer-events: none; }
+
+.daily-specials figure figcaption, .daily-specials figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.daily-specials figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0; }
+
+.daily-specials figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300; }
+
+.daily-specials figure h2 span {
+  font-weight: 800; }
+
+.daily-specials figure h2, .daily-specials figure p {
+  margin: 0; }
+
+.daily-specials figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%; }
+
+/*---------------*/
+/***** Sadie *****/
+/*---------------*/
+figure.effect-sadie figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+  background: linear, to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%;
+  content: '';
+  opacity: 0;
+  -webkit-transform: translate3d(0, 50%, 0);
+  transform: translate3d(0, 50%, 0); }
+
+figure.effect-sadie h2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #484c61;
+  -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+  transition: transform 0.35s, color 0.35s;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0); }
+
+figure.effect-sadie figcaption::before, figure.effect-sadie p {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s; }
+
+figure.effect-sadie p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0); }
+
+figure.effect-sadie:hover h2 {
+  color: #fff;
+  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+  transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0); }
+
+figure.effect-sadie:hover figcaption::before, figure.effect-sadie:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
 .daily-specials {
   margin-top: 50px;
   content: "";
   display: table;
   max-width: 80.5em;
   margin-left: auto;
-  margin-right: auto;
-  content: "";
-  display: table;
-  display: block; }
+  margin-right: auto; }
+  @media screen and (min-width: 200px)  {
+    .daily-specials {
+      width: 95%; } }
   @media screen and (min-width: 1200px)  {
     .daily-specials {
       width: 99%;
       max-width: 1250px; } }
 
+@media screen and (min-width: 200px)  {
+  .daily-column {
+    position: relative;
+    width: 100%;
+    margin: 0 auto; } }
 @media screen and (min-width: 1200px)  {
-  .daily-row {
+  .daily-column {
     width: 32%;
     margin: 0 auto;
     display: inline-block;
@@ -1012,47 +1133,8 @@ div#primary {
     float: inherit;
     vertical-align: top; } }
 
-@media screen and (min-width: 200px)  {
-  .food-picture {
-    float: left;
-    display: block;
-    margin-right: 14.2857142857%;
-    width: 100%;
-    margin: 50px auto 10px 7.5%;
-    width: 85%; }
-    .food-picture:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 650px)  {
-  .food-picture {
-    float: left;
-    display: block;
-    margin-right: 3.2258064516%;
-    width: 48.3870967742%;
-    margin: 50px auto 10px 4.5%; }
-    .food-picture:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 900px)  {
-  .food-picture {
-    float: left;
-    display: block;
-    margin-right: 2.1276595745%;
-    width: 40.4255319149%;
-    margin-top: 35px;
-    margin-bottom: 20px;
-    margin: 50px auto 10px 8.5%; }
-    .food-picture:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 1200px)  {
-  .food-picture {
-    float: left;
-    display: block;
-    margin-right: 2.1276595745%;
-    width: 23.4042553191%;
-    width: 85%;
-    margin: 35px auto 20px 25px;
-    float: inherit; }
-    .food-picture:last-child {
-      margin-right: 0; } }
+.food-picture {
+  width: 100%; }
 
 @media screen and (min-width: 650px)  {
   .details {
@@ -1061,7 +1143,7 @@ div#primary {
     margin-right: 3.2258064516%;
     width: 41.935483871%;
     margin-right: 0;
-    margin: 10% auto 0 2%; }
+    margin: 6em auto 7em; }
     .details:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 900px)  {
@@ -1070,7 +1152,8 @@ div#primary {
     display: block;
     margin-right: 2.1276595745%;
     width: 40.4255319149%;
-    margin: 14% auto 12%; }
+    display: inline-block;
+    margin: 6em auto 8.5em; }
     .details:last-child {
       margin-right: 0; } }
 @media screen and (min-width: 1200px)  {
@@ -1131,108 +1214,67 @@ div#primary {
   display: block; }
   @media screen and (min-width: 1200px)  {
     .full-menu {
-      width: 70em; } }
-  @media screen and (min-width: 200px)  {
-    .full-menu .food-picture {
-      float: left;
-      display: block;
-      margin-right: 14.2857142857%;
-      width: 100%;
-      margin: 50px auto 10px 7.5%;
-      width: 85%; }
-      .full-menu .food-picture:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 650px)  {
-    .full-menu .food-picture {
-      float: left;
-      display: block;
-      margin-right: 3.2258064516%;
-      width: 35.4838709677%;
-      max-width: 400px; }
-      .full-menu .food-picture:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 900px)  {
-    .full-menu .food-picture {
-      float: left;
-      display: block;
-      margin-right: 2.5641025641%;
-      width: 43.5897435897%;
-      margin-top: 35px;
-      margin-bottom: 20px; }
-      .full-menu .food-picture:last-child {
-        margin-right: 0; } }
+      width: 99%;
+      max-width: 1250px; } }
+
+@media screen and (min-width: 1200px)  {
+  .full-menu-column {
+    width: 32%;
+    margin: 0 auto;
+    display: inline-block;
+    height: auto;
+    float: inherit;
+    vertical-align: top; } }
+
+@media screen and (min-width: 200px)  {
+  .food-name {
+    float: left;
+    display: block;
+    margin-right: 14.2857142857%;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px; }
+    .food-name:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 200px)  {
+  .food-ingredient {
+    float: left;
+    display: block;
+    margin-right: 14.2857142857%;
+    width: 100%;
+    margin-right: 0;
+    margin: 5px auto 10px;
+    font-size: 0.95em;
+    font-style: italic;
+    text-align: center; }
+    .food-ingredient:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 200px)  {
+  .food-price {
+    float: left;
+    display: block;
+    margin-right: 14.2857142857%;
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 0;
+    font-style: italic; }
+    .food-price:last-child {
+      margin-right: 0; } }
+
+.hr-seperate {
+  background-color: #7B7C7F;
+  border: 0;
+  height: 1px;
+  margin: 1.5em auto;
+  width: 90%; }
   @media screen and (min-width: 1200px)  {
-    .full-menu .food-picture {
-      float: left;
-      display: block;
-      margin-right: 2.1276595745%;
-      width: 48.9361702128%; }
-      .full-menu .food-picture:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 650px)  {
-    .full-menu .details {
-      float: left;
-      display: block;
-      margin-right: 3.2258064516%;
-      width: 48.3870967742%;
-      margin-right: 0;
-      margin-top: 10%;
-      margin-bottom: 15%; }
-      .full-menu .details:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 900px)  {
-    .full-menu .details {
-      float: left;
-      display: block;
-      margin-right: 2.5641025641%;
-      width: 48.7179487179%;
-      margin: 10% auto 15%; }
-      .full-menu .details:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 1200px)  {
-    .full-menu .details {
-      float: left;
-      display: block;
-      margin-right: 2.1276595745%;
-      width: 40.4255319149%;
-      margin: 100px 0 180px 65px; }
-      .full-menu .details:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 200px)  {
-    .full-menu .food-name {
-      float: left;
-      display: block;
-      margin-right: 14.2857142857%;
-      width: 100%;
-      text-align: center;
-      padding: 0 15px; }
-      .full-menu .food-name:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 200px)  {
-    .full-menu .food-ingredient {
-      float: left;
-      display: block;
-      margin-right: 14.2857142857%;
-      width: 100%;
-      margin-right: 0;
-      margin: 5px auto 10px;
-      font-size: 0.95em;
-      font-style: italic;
-      text-align: center; }
-      .full-menu .food-ingredient:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 200px)  {
-    .full-menu .food-price {
-      float: left;
-      display: block;
-      margin-right: 14.2857142857%;
-      width: 100%;
-      margin-right: 0;
-      text-align: center;
-      margin-bottom: 0;
-      font-style: italic; }
-      .full-menu .food-price:last-child {
-        margin-right: 0; } }
+    .hr-seperate {
+      display: none; } }
+  .hr-seperate:last-child {
+    display: none; }
 
 /***********
  ABOUT-PAGE

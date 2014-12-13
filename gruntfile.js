@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 
         // watch for changes and trigger sass, jshint, uglify and livereload
         watch: {
-            files: ['sass/**/*.{scss,sass}', 'style.css', 'js/*.js'],
+            files: ['sass/**/*.{scss,sass}', 'style.css', 'js/*.js', '**/*.php'],
             tasks: ['sass', 'jshint', 'autoprefixer', 'browserSync'],
             options: {
                 livereload: true,

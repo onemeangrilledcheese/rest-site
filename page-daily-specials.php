@@ -13,9 +13,11 @@ get_header(); ?>
                <div class="daily-specials">
                 <?php
                 // check if the repeater field has rows of data, then loop through the rows of data
-                if( have_rows('create_new_daily_special') ):
-                    while ( have_rows('create_new_daily_special') ) : the_row(); ?>
-                       <div class="daily-row">
+                if( have_rows('create_new_daily_special')):
+                    while ( have_rows('create_new_daily_special')) : the_row(); ?>
+
+
+                       <div class="daily-column">
                        <?php
                         $imageArray = get_sub_field('food_item_picture'); // Array returned by Advanced Custom Fields, allows to pull from in the next few variables
                         $imageAlt = $imageArray['alt']; // Grab, from the array, the 'alt'
@@ -26,6 +28,7 @@ get_header(); ?>
                             <div class="wp-caption">
                         <?php endif; ?>
 
+                            <figure class="effect-sadie">
                             <a rel="lightbox" href="<?php echo $imageURL; ?>">
                                 <img class="food-picture" src="<?php echo $imageThumbURL;?>" alt="<?php echo $imageAlt; ?>">
                             </a>
@@ -34,15 +37,18 @@ get_header(); ?>
                                     <p class="wp-caption-text"><?php echo $imageCaption; ?></p>
                                 </div>
                             <?php endif; ?>
-
-                            <div class="details">
-                                <h2 class="food-name"><?php the_sub_field('food_item_name'); ?></h2>
-                                <p class="food-ingredient"><?php the_sub_field('food_item_ingredients'); ?></p>
-                                <p class="food-price"><?php the_sub_field('food_item_price'); ?></p>
-                            </div>
+                            <figcaption>
+                              <div class="details">
+                                  <h2><?php the_sub_field('food_item_name'); ?></h2>
+                                  <p><?php the_sub_field('food_item_ingredients'); ?></p>
+                                  <p class="food-price"><?php the_sub_field('food_item_price'); ?></p>
+                              </div>
+                            </figcaption>
+                            </figure>
                         </div> <!-- end .row -->
+                        <?php echo '<hr class="hr-seperate" />'; ?>
                     <?php
-                    endwhile;
+                    endwhile; // new row looop
                 else : // no rows found
                 endif;
                 ?>
@@ -52,5 +58,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
     </div><!-- .inner-container -->
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php
+get_sidebar();
+get_footer();
