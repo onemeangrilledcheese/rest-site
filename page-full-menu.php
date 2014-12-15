@@ -26,6 +26,7 @@ get_header(); ?>
                             <div class="wp-caption"></div>
                         <?php endif; ?>
                         <div class="row">
+                           <figure class="effect-sadie">
                             <a rel="lightbox" href="<?php echo $imageURL; ?>">
                                 <img class="food-picture" src="<?php echo $imageThumbURL;?>" alt="<?php echo $imageAlt; ?>">
                             </a>
@@ -33,14 +34,17 @@ get_header(); ?>
                             <?php if( $imageCaption ): ?>
                                     <p class="wp-caption-text"><?php echo $imageCaption; ?></p>
                             <?php endif; ?>
-
+                            <figcaption>
                             <div class="details">
                                 <h2 class="food-name"><?php the_sub_field('food_item_name'); ?></h2>
                                 <p class="food-ingredient"><?php the_sub_field('food_item_ingredients'); ?></p>
                                 <p class="food-price"><?php the_sub_field('food_item_price'); ?></p>
                             </div>
-                        </div>
+                            </div>
+                           </figcaption>
+                          </figure>
                        </div> <!-- end .row -->
+                       <?php echo '<hr class="hr-seperate" />'; ?>
                     <?php
                     endwhile;
                 else : // no rows found

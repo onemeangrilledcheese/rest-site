@@ -40,7 +40,7 @@ get_header(); ?>
                             <figcaption>
                               <div class="details">
                                   <h2><?php the_sub_field('food_item_name'); ?></h2>
-                                  <p><?php the_sub_field('food_item_ingredients'); ?></p>
+                                  <p class="food-ingredients"><?php the_sub_field('food_item_ingredients'); ?></p>
                                   <p class="food-price"><?php the_sub_field('food_item_price'); ?></p>
                               </div>
                             </figcaption>
