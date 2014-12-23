@@ -9,11 +9,22 @@ module.exports = function(grunt) {
 
         // watch for changes and trigger sass, jshint, uglify and livereload
         watch: {
-            files: ['sass/**/*.{scss,sass}', 'style.css', 'js/*.js', '**/*.php'],
-            tasks: ['sass', 'jshint', 'autoprefixer', 'browserSync'],
             options: {
                 livereload: true,
+            },
+            sass: {
+                files: ['sass/**/*.{scss,sass}'],
+                tasks: ['sass', 'autoprefixer', 'browserSync'],
+            },
+            css: {
+                files: ['style.css'],
+                tasks: ['autoprefixer'],
+            },
+            scripts: {
+                files: ['sass/**/*.{scss,sass}', 'style.css', 'js/*.js', '**/*.php'],
+                tasks: ['jshint', 'browserSync'],
             }
+
         },
 
         // sass
@@ -33,21 +44,19 @@ module.exports = function(grunt) {
         // autoprefixer
         autoprefixer: {
             options: {
-                browsers: ['last 2 versions', 'ie 9', 'ios 6', 'android 4'],
-                map: true
+                browsers: ['last 4 versions']
             },
-            files: {
-                expand: true,
-                flatten: true,
-                src: '*.css',
-                dest: ''
-            },
+            dist: {
+                files: {
+                    'style.css': 'style.css'
+                }
+            }
         },
         // runs across multiple devices (runs concurrently with watch task)
         browserSync: {
             dev: {
                 bsFiles: {
-                    src : ['style.css', '*.php']
+                    src : ['style.css', '*.php', 'js/*.js']
                 },
                 options: {
                     proxy: "rest-site.dev",
@@ -85,12 +94,13 @@ module.exports = function(grunt) {
         // concurrent
         concurrent: {
             target: {
-                tasks: ['autoprefixer', 'jshint', 'sass', 'uglify']
+                tasks: ['autoprefixer', 'sass', 'uglify']
             }
         }
     });
 
     // register task
     grunt.registerTask('default', ['concurrent:target', 'browserSync', 'watch' ]);
+    grunt.registerTask('style', ['browserSync', 'watch:sass']);
     grunt.registerTask('dev', ['sass', 'autoprefixer', 'cssmin', 'uglify', 'watch']);
 };
