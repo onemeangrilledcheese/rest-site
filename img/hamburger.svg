@@ -1,0 +1,15 @@
+<svg class="hamburger" width="40" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32">
+    <desc>
+    <!-- blur effect -->
+    </desc>
+    <filter id = "i1" width = "150%" height = "150%">
+        <feOffset result = "offOut" in = "SourceGraphic" dx = "30" dy = "30"/>
+        <feBlend in = "SourceGraphic" in2 = "offOut" mode = "normal"/>
+    </filter>
+    <g stroke-width = "5" filter = "url(#i1)">
+      <!-- end blur effect, start hamburger lines -->
+      <rect class="hamburger-line" x="0" y="3" fill="#fff" width="32" height="5" rx="3" ry="3"/>
+      <rect class="hamburger-line" x="0" y="14" fill="#fff" width="32" height="5" rx="3" ry="3"/>
+      <rect class="hamburger-line" x="0" y="25" fill="#fff" width="32" height="5" rx="3" ry="3"/>
+    </g>
+</svg>

@@ -30,7 +30,7 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'restaurant-theme' ); ?></button>
+			<button class="menu-toggle"><?php include("img/hamburger.svg") ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
