@@ -1,5 +1,7 @@
 ![Travis CI Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)
 
+Change to see if cronjob was successful.
+
 _s
 ===
 
